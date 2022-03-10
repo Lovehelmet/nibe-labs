@@ -1,0 +1,1785 @@
+<!doctype html>
+<html lang="sv_SE">
+    <head>
+        <meta charset="utf-8">
+        <title>NIBE LAB</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- favicon -->
+		<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+
+    </head>
+    <body data-smooth-scroll-offset="77" >
+        <a id="start"></a>
+        
+        <div class="main-container">
+                
+            <div class="nav-container">
+                <div class="bar-shadow">
+                    <div class="bar bar--sm visible-sm visible-xs">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3 col-md-2">
+                                    <a href="index.html">
+                                        <img class="logo logo-dark" alt="logo" src="assets/img/nibe_web_logo.svg">
+                                    </a>
+                                </div>
+                                <div class="col-9 col-md-10 text-right">
+                                    <a href="#" class="hamburger-toggle" data-toggle-class="#menu3;hidden-xs hidden-sm">
+                                        <i class="icon icon--sm stack-interface stack-menu"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="bar bar--sm pos-fixed hidden-xs hidden-sm" id="menu3" >
+                        <div class="my-nav-container">
+                            <div class="row">
+                                <div class="col-lg-1 hidden-xs hidden-sm order-lg-1">
+                                    <div class="bar__module">
+                                        <a href="index.html">
+                                            <img class="logo logo-dark" alt="logo" src="assets/img/nibe_web_logo.svg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 order-lg-2 pl60">
+                                    <div class="bar__module">
+                                        <ul class="menu-horizontal text-left">
+                                            <li>
+                                                <a id="hem" href="#">Hitta rätt värmepump</a>
+                                            </li>
+                                            <li>
+                                                <a id="produkter" href="#">Produkter</a>
+                                            </li>
+                                            <li>
+                                                <a id="kunskapsbank" href="#">Kunskapsbank</a>
+                                            </li>
+                                            <li>
+                                                <a id="support" href="#">Support</a>
+                                            </li>
+                                            <li>
+                                                <a id="smarta-hem" href="#">Smarta hem</a>
+                                            </li>
+                                            <li>
+                                                <a id="om-nibe" href="#">Om Nibe</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 text-right text-left-xs order-lg-3">
+                                    <div class="bar__module">
+                                        <ul class="menu-horizontal text-left">
+                                            <li>
+                                                <a id="sok" href="#" data-notification-link="search-box">
+                                                    <img src="assets/img/searchicon.svg"> Sök
+                                                </a>
+                                            </li>
+                                            <!-- <li>
+                                                <a id="proffs" href="#">Proffs</a>
+                                            </li> -->
+                                            <!-- <li>
+                                                <a id="nibe-group" href="#">Nibe Group</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 text-left breadcrumb-bar hidden-xs">
+                                <div class="bar__module">
+                                    <ul class="menu-horizontal">
+                                        <li style="margin-right: 0.2em;">
+                                            <a href="#">
+                                                Breadcrumb 1
+                                            </a>
+                                        </li>
+                                        <li style="margin-left: 0.5em;">
+                                            <a href="#">
+                                                Breadcrumb
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="myBlackButton-container">
+                 <div id="myBlackButton" class="fadeInRight hidden-xs">
+                <a class="btn btn--lg btn--black box-shadow-big href="https://www.nibe.eu/sv-se/hitta-ratt-varmepump/sok-installator">
+                <span class="btn__text">Prata med en expert &raquo</span>
+                </a>
+            </div>
+
+            </div>
+
+            <!-- ##  Expert button  ## -->
+            <!-- <div id="myBlackButton" class="fadeInRight hidden-xs">
+                <a class="btn btn--lg btn--black box-shadow-big href="https://www.nibe.eu/sv-se/hitta-ratt-varmepump/sok-installator">
+                <span class="btn__text">Prata med en expert &raquo</span>
+                </a>
+            </div> -->
+
+            <!-- HERO banner med centrerad text och variabel färg + höjd-->
+            <section id="hero" class="cover changeme13 heroheight height-56 imagebg text-center section--ken-burns" data-overlay="0" data-scrim-top="3">
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/owl.jpg">
+                </div> -->
+
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/hero_nature_product.jpg">
+                </div> -->
+
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/inomhus-produkt.jpg">
+                </div> -->
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/inomhus-produkt-manniska.jpg">
+                </div> -->
+
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/skog-familj.jpg">
+                </div> -->
+
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/produkt-natur.jpg">
+                </div> -->
+                
+                <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/natur-skog.jpg">
+                </div>
+
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="hero-text-block">
+                            <h1 id="heroheading">Luft/vattenvärmepumparna</h1>
+                            <!-- <h1 id="heroheading">Ringgrabenkollektoren</h1> -->
+                            <p>NIBE S-seriens värmepumpar är smidiga att byta till.</p>
+                            <div class="hero-btn-div changeme14 changeme12 hide blue">
+                                <a class="btn btn--green btn--lg type--uppercase" href="#">
+                                    <span class="btn__text text-shadow">Mer om S-serien</span>
+                                </a>
+                                <a class="btn btn--green btn--lg type--uppercase" href="#">
+                                    <span class="btn__text text-shadow">Mer om S-serien</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HERO banner med vänsterställd text / högerställd bild eller video och variabel färg-->
+            <section id="hero-new" class="switchable space--sm switchable--switch cover changeme13 heroheight height-56 imagebg section--ken-burns" data-scrim-top="3">
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/owl.jpg">
+                </div> -->
+
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/hero_nature_product.jpg">
+                </div> -->
+
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/inomhus-produkt.jpg">
+                </div> -->
+
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/inomhus-produkt-manniska.jpg">
+                </div> -->
+
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/skog-familj.jpg">
+                </div> -->
+
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/produkt-natur.jpg">
+                </div> -->
+                
+                <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/natur-skog.jpg">
+                </div>
+
+                <!-- <div class="background-image-holder">
+                    <img loading="lazy" alt="image" class="background-image" src="assets/img/NIBE_Livingroom_Family_001.jpg">
+                </div> -->
+                
+                <div class="container pos-vertical-center">
+                    <div class="row justify-content-between mynewhero split">
+                        <div class="text-center-xs">
+                            <h1>Hållbarhet ligger i vår natur</h1>
+                            <p>Värmepumpar för en energisnål vardag och en bättre värld.</p>
+
+                            <!-- <h1>Uppgradera hemkänslan</h1>
+                            <p>Med hållbar värme och behagligt inomhusklimat året om.</p> -->
+                            <div class="hero-btn-div mt40 changeme14 changeme12 hide blue">
+                                <a class="btn btn--green btn--lg type--uppercase" href="#">
+                                    <span class="btn__text text-shadow">Mer om S-serien</span>
+                                </a>
+
+                                <a class="btn btn--green btn--lg type--uppercase" href="#">
+                                    <span class="btn__text text-shadow">Mer om S-serien</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hero-media col-lg-5 col-md-7 col-sm-9 text-center" style=" padding-top: 10px; padding-right: 0; padding-left: 10px;">
+                            <!-- <div class="video-cover border--round box-shadow-big" style="padding: 0;">
+                                <div class="background-image-holder">
+                                    <img alt="image" src="assets/img/blog-3.jpg">
+                                </div>
+                                <div class="video-play-icon" style="opacity: .95;"></div>
+                                    <div class="video-overlay" style="position: absolute;width: 100%; height: 100%; background: transparent"></div>
+                                    <iframe id="playvideo" width="560" height="315" src="https://www.youtube.com/embed/-CSJ-wtdRNI?playlist=-CSJ-wtdRNI&amp;autoplay=1&amp;loop=1&amp;controls=0&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;showsearch=0&amp;controls=0" title="YouTube video player" rel="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div> -->
+
+                            <!-- <img loading="lazy" alt="Image" class="border--round my-image1" src="assets/img/NIBE_S-produktline-2019_1500p-3.png"> -->
+
+                            <!-- <iframe class="gtms-intro" width="560" height="315" src="https://www.youtube.com/embed/-CSJ-wtdRNI?rel=0&controls=0&showinfo=0&autoplay=1&loop=1&modestbranding=1&playlist=-CSJ-wtdRNI" frameborder="0"></iframe> -->
+
+                           
+                            <div style="position: relative;">
+                                <iframe src="https://player.vimeo.com/video/673538033?h=94a3abb1b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="checkboxes">
+                <div class="row">
+                    <div> 
+                        <span class="block">Small Hero <-> Large Hero</span>
+                        <div class="input-checkbox">
+                            <input type="checkbox" id="heroheight" value="supress">
+                            <label></label>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="block">Hero button off <-> on</span>
+                        <div class="input-checkbox">
+                            <input type="checkbox" id="myherobtn" value="supress">
+                            <label></label>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="block">Blue <-> Green</span>
+                        <div class="input-checkbox">
+                            <input type="checkbox" id="herobuttoncolor" value="supress">
+                            <label></label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="my-body">
+                <section class="text-center">
+                    <div class="container" style="display: flex; justify-content: center;">
+                        <div class="row">
+                            <div class="text-fullwidth-block">
+                                <h2 class="green">Värme på ditt sätt – för en enkel och hållbar vardag</h2>
+                                <p>Våra nya värmepumpar passar alla hus, är smidiga att byta till, har alltid den senaste mjukvaran och justerar värmen efter dina vanor och väderprognosen. Dessutom kan du ha full koll på värmepumpen via din mobil. Allt för att du ska få billigare, grönare och skönare värme, både nu och i framtiden.</p>
+
+                                <!-- <div class="mt60 ">
+                                    <img class="svg orange" src="assets/img/check.svg" alt="Icon" />
+                                    <img class="svg" data-src="assets/img/check.svg" alt="Icon" />
+                                    <img class="svg fuchsia" src="assets/img/check.svg" alt="Icon" />
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="checkboxes">
+                    <div class="row">
+                        <div class="hidden-xs">
+                            <span class="block">Left <-> Right</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="direction" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block">Blue <-> Green</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="color" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block">Streamer off <-> on</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="streamer" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block">Button off <-> on</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="mybtn" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div id="direction3" class="my-2col-container changeme" style="min-height: 200px;">
+                        <div class="column-txt my-2col-25 green changeme">
+                            <h3 class="my-green-h3">Dags för en ny värmepump?</h3>
+                            <a href="#">
+                                <h4>Spara upp till 6000 kr när du köper vår trotjänare bergvärmepumpen NIBE F1226 »</h4>
+                            </a>
+                            <div id="mybtn" class="pt20 hide changeme2">
+                                <a class="btn btn--green btn--lg type--uppercase" href="#">
+                                    <span class="btn__text text-shadow">Utforska Nibe F-serie</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="my-2col" style="overflow: hidden;">
+                            <div class="streamer my-streamer hide green changeme">Nyhet!</div>
+                            <div class="my-2col-75img" style="background-image: url(assets/img/varmepumpar-for-behagligt-inomhusklimat.jpg);"></div>
+                        </div>
+                    </div> 
+                </section>
+
+                <section>
+                    <div id="direction3" class="my-2col-container row-reverse" style="min-height: 200px;">
+                        <div class="column-txt my-2col-25 item-text blue">
+                            <h3 class="my-blue-h3">Expertråd inför köpet</h3>
+                            <a href="#">
+                                <h4>Experthjälpen svarar på dina frågor och hjälper dig vidare »</h4>
+                            </a>
+                        </div>
+                    
+                        <div class="my-2col item-bild">
+                            <div class="my-2col-75img" style="background-image: url(assets/img/expertrad-infor-kopet.jpg);"></div>
+                        </div>
+                    </div> 
+                </section>
+
+                <section class="text-center">
+                    <div class="container" style="display: flex; justify-content: center;">
+                        <div class="row">
+                            <div class="text-fullwidth-block">
+                                <h2 class="green mt0">Värmepumpar i 40 år</h2>
+                                <p>Vår mångåriga erfarenhet och tusentals timmar av utveckling speglas inte bara i moderna och energieffektiva värmepumpar utan också i vårt breda produktsortiment. Produkterna är designade för dig och ditt hem.</p>
+                                <a class="btn btn--green btn--lg type--uppercase mt30" href="#">
+                                    <span class="btn__text text-shadow">Utforska Nibe F-serie</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div id="direction3" class="my-2col-container changeme" style="min-height: 200px;">
+                        <div class="column-txt my-2col-25 green changeme">
+                            <h3 class="my-green-h3">Hur mycket kan jag spara med en NIBE värmepump?</h3>
+                            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#">
+                                <h4>Prova vår besparingskalkylator »</h4>
+                            </a>
+                            <div id="mybtn" class="pt20 hide changeme2">
+                                <a class="btn btn--green btn--sm type--uppercase" href="#">
+                                    <span class="btn__text text-shadow">Utforska Nibe F-serie</span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="my-2col">
+                            <div class="my-2col-75img" style="background-image: url(assets/img/hur-mycket-kan-jag-spara.jpg);"></div>
+                        </div>
+                    </div> 
+                </section>
+
+                <section>
+                    <div id="direction3" class="my-2col-container row-reverse" style="min-height: 200px;">
+                        <div class="column-txt my-2col-25 item-text blue">
+                            <h3 class="my-blue-h3">Hitta rätt värmepump på 1 minut</h3>
+                            <a href="#">
+                                <h4>Prova vår produktvalsguide! »</h4>
+                            </a>
+                        </div>
+                    
+                        <div class="my-2col item-bild" style="overflow: hidden;">
+                            <div class="streamer my-streamer blue">Nyhet!</div>
+                            <div class="my-2col-75img" style="background-image: url(assets/img/hitta-ratt-varmepump.jpg);"></div>
+                        </div>
+                    </div> 
+                </section>
+
+                <section class="checkboxes">
+                    <div class="row">
+                        <div class="hidden-xs">
+                            <span class="block">Left <-> Right</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="video-direction" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block">Blue <-> Green</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="video-color" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block">No background</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="video-background" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div id="direction3" class="my-2col-container-50 changeme24" >
+                        <div class="my-2col-video" style="overflow: hidden;">
+                            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/680028018?h=c745de5f16&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="NIBE Värmepumpar S-serien"></iframe></div>
+                        </div>
+
+                        <div class="column-txt-50 my-2col-50 blue changeme25">
+                            <h3>Säg hej till S-serien</h3>
+                            <p>
+                                När det är dags för en ny värmepump, välj komfort på riktigt. Med S-serien i hjärtat av ditt hem får du ett skönt inomhusklimat året om, hållbar energianvändning och full koll i mobilen.
+                            </p>
+                            <a href="#">
+                                <h4>Prova vår produktvalsguide! »</h4>
+                            </a>
+                        </div>
+                    </div> 
+                </section>
+
+                
+
+                <section>
+                    <div id="direction3" class="my-2col-container changeme" style="min-height: 200px;">
+                        <div class="column-txt my-2col-25 green changeme">
+                            <h3 class="my-green-h3">Driv din värmepump med solceller</h3>
+                            <a href="#">
+                                <h4>Fördelar med att välja solcellspaket från oss »</h4>
+                            </a>
+                            <div id="mybtn" class="pt20 hide changeme2">
+                                <a class="btn btn--green btn--sm type--uppercase" href="#">
+                                    <span class="btn__text text-shadow">Utforska Nibe F-serie</span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="my-2col" style="overflow: hidden;">
+                            <div class="my-2col-75img" style="background-image: url(assets/img/varm-huset-med-energi-fran-solceller.jpg);"></div>
+                        </div>
+                    </div> 
+                </section>
+
+                <section class="checkboxes">
+                    <div>
+                        <div class="row">
+                            <div>
+                                <span class="block">Blue <-> Green</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="color2" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">White BG</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="white" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">Border</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="border" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">Image</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="image4" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">Icon</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="color4" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">Text link <-> Button link</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="cardbtn" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <span class="block">Hide <-> show 1</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="fliphide1" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">Hide <-> show 2</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="fliphide2" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">Hide <-> show 3</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="fliphide3" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">Hide <-> show 4</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="fliphide4" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="cards">
+                        <div id="color2" class="card changeme4 flipbox1 green">
+                            <picture class="thumbnail changeme17 hide">
+                                <img src="assets/img/NIBE-erbjuder-finansiering-opt.jpg" alt="Norwegian boller">
+                            </picture>
+                            <div class="card-content changeme16">
+                                <div class="text-center">
+                                    <img id="hexagon-card" class="hide svg changeme15" data-src="assets/img/smartguide.svg" alt="My colored hexagon svg" />
+                                </div>
+                                <h3>Låna till hela investeringen</h3>
+                                <p>TUX re-inventing the wheel, and move the needle. Feature creep dogpile that but diversify kpis but market-facing.</p>
+                                <div class="modal-instance block">
+                                    <a class="modal-trigger changeme18" href="#">
+                                        <h4>Samarbete med Danske Bank »</h4>
+                                    </a>
+                                    <div class="modal-container">
+                                        <div class="modal-content">
+                                            <section class="imageblock feature-large bg--white border--round ">
+                                                <div class="imageblock__content col-lg-5 col-md-3 pos-left">
+                                                    <div class="background-image-holder">
+                                                        <img alt="image" src="assets/img/finansering-pappa-son-i-soffa-750x580px.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="container" style="max-width: 1240px;">
+                                                    <div class="row justify-content-end">
+                                                        <div class="col-md-9 col-lg-7">
+                                                            <div class="row justify-content-center">
+                                                                <div class="col-md-11 col-lg-9">
+                                                                    <h2>Finansiera hela ditt värmesystem!</h2>
+                                                                    <p>Förmånligt erbjudande på privatlån för finansiering av ditt nya värmesystem
+                                                                    </p>
+                                                                    <p>I samarbete med <a href="#">Danske Bank</a> erbjuder vi en enkel och förmånlig finansiering som gäller alla NIBE-produkter och NIBE-installatörer. Låna till hela investeringen - från produkt till installation.</p>
+                                                                    <p><a href="#">Läs mer här »</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="changeme19 hide">
+                                    <div class="modal-instance block">
+                                        <a class="modal-trigger btn btn--green type--uppercase" href="#">
+                                            <span class="btn__text text-shadow">Samarbete med Danske Bank »</span>
+                                        </a>
+                                        <div class="modal-container">
+                                            <div class="modal-content">
+                                                <section class="imageblock feature-large bg--white border--round ">
+                                                    <div class="imageblock__content col-lg-5 col-md-3 pos-left">
+                                                        <div class="background-image-holder">
+                                                            <img alt="image" src="assets/img/finansering-pappa-son-i-soffa-750x580px.jpg" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="container" style="max-width: 1240px;">
+                                                        <div class="row justify-content-end">
+                                                            <div class="col-md-9 col-lg-7">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-md-11 col-lg-9">
+                                                                        <h2>Finansiera hela ditt värmesystem!</h2>
+                                                                        <p>Förmånligt erbjudande på privatlån för finansiering av ditt nya värmesystem
+                                                                        </p>
+                                                                        <p>I samarbete med <a href="#">Danske Bank</a> erbjuder vi en enkel och förmånlig finansiering som gäller alla NIBE-produkter och NIBE-installatörer. Låna till hela investeringen - från produkt till installation.</p>
+                                                                        <p><a href="#">Läs mer här »</a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div id="color2" class="card changeme4 flipbox2 green">
+                            <picture class="thumbnail changeme17 hide">
+                                <img src="assets/img/trygghet-med-varmepumpar-fran-nibe.jpg" alt="Norwegian boller">
+                            </picture>
+                            <div class="card-content changeme16">
+                                <div class="text-center">
+                                    <img id="hexagon-card" class="hide svg changeme15" data-src="assets/img/financing.svg" alt=" My colored hexagon svg" />
+                                </div>
+                                <h3>Trygghet upp till 18 år</h3>
+                                <p>Execute are we in agreeance what do you feel you would bring to the table if you were hired for this position, nor closer to the metal goalposts, are there any leftovers in the kitchen?.</p>
+                                <div class="modal-instance block">
+                                    <a class="modal-trigger changeme18" href="#">
+                                        <h4>Garanti och försäkring »</h4>
+                                    </a>
+                                    <div class="modal-container">
+                                        <div class="modal-content section-modal">
+                                            <section class="unpad ">
+                                                <div class="container" style="max-width: 1440px; padding-left: 2px;">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-6 col-12">
+                                                            <div class="feature feature-1 text-center">
+                                                                <div class='embed-container'>
+                                                                    <iframe src='https://player.vimeo.com/video/673538033' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                                                </div>
+                                                                <div class="feature__body boxed boxed--lg boxed--border" style="border-radius: 0 0 6px 6px;">
+                                                                    <div class="modal-close modal-close-cross"></div>
+                                                                    <div class="text-block text-left">
+                                                                        <h3>Ett litet modalfönster med video</h3>
+                                                                        <p>Doloribus, dolorum sint cum ipsam veniam, laudantium necessitatibus maiores rem <a href="#">recusandae eveniet</a> non quia eligendi a velit molestiae explicabo perspiciatis voluptatum delectus asperiores.</p>
+                                                                        <p>Enim perferendis maxime laudantium praesentium est in incidunt esse. Atque natus impedit incidunt commodi provident voluptates in asperiores placeat eius.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="changeme19 hide">
+                                    <div class="modal-instance block">
+                                        <a class="modal-trigger btn btn--green type--uppercase" href="#">
+                                            <span class="btn__text text-shadow">Garanti och försäkring »</span>
+                                        </a>
+                                        <div class="modal-container">
+                                            <div class="modal-content section-modal">
+                                                <section class="unpad ">
+                                                    <div class="container" style="max-width: 1440px; padding-left: 2px;">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-md-6 col-12">
+                                                                <div class="feature feature-1 text-center">
+                                                                    <img class="mb0" alt="Image" src="assets/img/vattenfall-750x580px.jpg" />
+                                                                    <div class="feature__body boxed boxed--lg boxed--border">
+                                                                        <div class="modal-close modal-close-cross"></div>
+                                                                        <div class="text-block text-left">
+                                                                            <h3>Ett litet modalfönster med bild</h3>
+                                                                            <p>Doloribus, dolorum sint cum ipsam veniam, laudantium necessitatibus maiores rem <a href="#">recusandae eveniet</a> non quia eligendi a velit molestiae explicabo perspiciatis voluptatum delectus asperiores.</p>
+                                                                            <p>Enim perferendis maxime laudantium praesentium est in incidunt esse. Atque natus impedit incidunt commodi provident voluptates in asperiores placeat eius.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div id="color2" class="card changeme4 flipbox3 green">
+                            <picture class="thumbnail changeme17 hide">
+                                <img src="assets/img/Fam-Rehn-Lidhult-443-388-opt.jpg" alt="A dinosaur wearing an aluminium jacket">
+                            </picture>
+                            <div class="card-content changeme16">
+                                <div class="text-center">
+                                    <img id="hexagon-card" class="hide svg changeme15" data-src="assets/img/water-circulation.svg" alt="My colored hexagon svg" />
+                                </div>
+                                <h3>Smart värme hos familjen Rehn</h3>
+                                <p>Viral engagement anti-pattern back of the net, for meeting assassin horsehead offer. Loop back design thinking drop-dead date. </p>
+                                <a class="changeme18" href="#">
+                                    <h4>Se fler NIBE Stories! »</h4>
+                                </a>
+                                <div class="changeme19 hide">
+                                    <a class="btn btn--green type--uppercase" href="#">
+                                        <span class="btn__text text-shadow">Se fler NIBE Stories! »</span>
+                                    </a>
+                                </div>
+                                <!-- <h3>Sie möchten mehr Informationen?</h3>
+                                <p>Welche ist die Wärmepumpe Ihres Lebens? Wir beraten Sie gern.</p>
+                                <a class="changeme18" href="#">
+                                    <h4>Informationen erhalten »</h4>
+                                </a>
+                                <div class="changeme19 hide">
+                                    <a class="btn btn--green type--uppercase" href="#">
+                                        <span class="btn__text text-shadow">Se fler NIBE Stories! »</span>
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div id="color2" class="card changeme4 flipbox4 green">
+                            <picture class="thumbnail changeme17 hide">
+                                <img src="assets/img/Franluft-443-388-opt.jpg" alt="A dinosaur wearing an aluminium jacket">
+                            </picture>
+                            <div class="card-content changeme16">
+                                <div class="text-center">
+                                    <img id="hexagon-card" class="hide svg changeme15" data-src="assets/img/comfort-hexagon.svg" alt="My colored hexagon svg" />
+                                </div>
+                                <h3>Miljöansvar</h3>
+                                <p>Viral engagement anti-pattern back of the net, for meeting assassin horsehead offer. Loop back design thinking drop-dead date. </p>
+                                <a class="changeme18" href="#">
+                                    <h4>Vårt hållbarhetsarbete »</h4>
+                                </a>
+                                <div class="changeme19 hide">
+                                    <a class="btn btn--green type--uppercase" href="#">
+                                        <span class="btn__text text-shadow">Vårt hållbarhetsarbete »</span>
+                                    </a>
+                                </div>
+                                <!-- <h3>Installateur direkt kontaktieren</h3>
+                                <p>Bei unsere Suche finden Sie den zuständigen NIBE Effizienzpartner für Vertrieb in Ihrer Nähe. </p>
+                                <a class="changeme18" href="#">
+                                    <h4>Partner suchen »</h4>
+                                </a>
+                                <div class="changeme19 hide">
+                                    <a class="btn btn--green type--uppercase" href="#">
+                                        <span class="btn__text text-shadow">Vårt hållbarhetsarbete »</span>
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="checkboxes">
+                    <div class="row">
+                        <div class="hidden-xs">
+                            <span class="block">Left <-> Right</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="direction4" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block">Blue <-> Green</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="color3" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <style>
+                    .my-2col.item-text h2 {
+                        font-size: clamp(32px, 3vw, 60px);
+                        line-height: 1.13em;
+                        font-weight: 600!important;
+                        margin-bottom: .5em;
+                    }
+
+                    .my-2col.item-bild {
+                        overflow: hidden;
+                    }
+
+                    .my-2col.item-bild .my-2col-img{
+                        background-size: cover;
+                        background-position: center center;
+                    }
+                </style>
+
+                <section>
+                    <div id="direction4" class="my-2col-container changeme11">
+                        <div class="column-txt-3 my-2col item-text changeme8 green">
+                            <h2>Svensk innovation och ingenjörskonst</h2>
+                            <p>
+                                S-serien innehåller våra mest avancerade produkter hittills, byggda på framtidssäkra komponenter. De är utvecklade av våra egna ingenjörer och tillverkas i våra fabriker i Markaryd, så att vi kan säkerställa att varje värmepump håller våra höga kvalitetskrav.
+                            </p>
+                            <p>För att garantera ett långt och bekymmersfritt ägande av din nya bergvärmepump ingår 3 års garanti och 6 års trygghetsförsäkring i köpet (som du kan förlänga upp till 18 år), båda gäller från installationsdagen. NIBE är ett svenskt företag som har tillverkat hållbara klimatlösningar i snart 70 år.</p>
+                            <a href="#">
+                                <h4 class="link">Läs mer om S-serien &raquo;</h4>
+                            </a>
+                        </div>
+                      
+                        <div class="my-2col item-bild">
+                            <div class="streamer my-streamer green">Nyhet!</div>
+                            <div class="my-2col-img" style="background-image: url(assets/img/upptack-vara-lediga-jobb.jpg);"></div>
+                        </div>
+                      </div> 
+                </section>
+
+                <section class="checkboxes">
+                    <div>
+                        <div class="row">
+                            <div>
+                                <span class="block">Youtube <-> Vimeo </span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="videoplayer" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div id="direction4" class="my-2col-container row-reverse">
+                        <div class="column-txt-3 my-2col blue">
+                            <h2>Svensk innovation och ingenjörskonst</h2>
+                            <p>
+                                S-serien innehåller våra mest avancerade produkter hittills, byggda på framtidssäkra komponenter. De är utvecklade av våra egna ingenjörer och tillverkas i våra fabriker i Markaryd, så att vi kan säkerställa att varje värmepump håller våra höga kvalitetskrav.
+                            </p>
+                            <a href="#">
+                                <h4 class="link">Läs mer om S-serien &raquo;</h4>
+                            </a>
+                        </div>
+                      
+                        <div class="my-2col" style="overflow: hidden;">
+                            <div class="streamer my-streamer blue">Nyhet!</div>
+                                <div class="my-2col-img" style="background-image: url(assets/img/trygghet-med-varmepumpar-fran-nibe.jpg);">
+                                <div class="modal-instance" style="width: 100%; height: 89%;">
+                                    <div style="display: flex; width: 100%; height: 100%;">
+                                        <div class="video-play-icon modal-trigger" style="margin: auto auto; opacity: .85;"></div>
+                                        <div class="modal-container">
+                                            <div class="modal-content bg-dark" data-width="51.1%" data-height="52%">
+                                                <iframe class="my-ytvideo hide" data-src="https://www.youtube.com/embed/-CSJ-wtdRNI?autoplay=1" allowfullscreen="allowfullscreen"></iframe>
+                                                <iframe class="my-vvideo hide" src="https://player.vimeo.com/video/673076525?h=998bb9cdfb&amp;badge=0&autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="NIBE Värmepumpar S-serien.mp4"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </section>
+
+                <section class="text-center">
+                    <div class="container" style="display: flex; justify-content: center;">
+                        <div class="row">
+                            <div class="text-fullwidth-block">
+                                <h2 class="blue mt0">Min rubrik här</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, earum officia quae atque omnis, totam officiis enim accusantium neque et, quidem tempore vitae. Placeat reprehenderit cumque quo aliquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="columns changeme20 green">
+                        <h3>När ska man byta värmepump?</h3>
+                        <p>
+                            <strong>Att se över din värmeanläggning är en bra idé, men hur vet du egentligen när det är dags att byta ut den och uppgradera ditt värmesystem? Per Törnkvist är expert på NIBE.</strong>
+                        </p>
+            
+                        <img class="box-shadow changeme21 hide" src="assets/img/per-9548.jpg">
+
+                        
+                        <iframe class="yt box-shadow changeme22 hide" src="https://www.youtube.com/embed/-CSJ-wtdRNI?playlist=-CSJ-wtdRNI&loop=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. <a href="#">Distinctio numquam</a> alias voluptate sequi soluta officiis vitae aut quaerat tempora. Sunt quia totam reprehenderit ratione voluptatibus similique, atque inventore nulla odit.
+                        </p>
+            
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora.  Dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora.
+                        </p>
+            
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. Sunt quia totam reprehenderit ratione voluptatibus similique, atque inventore nulla odit. Dolor sit, amet consectetur <a href="#">adipisicing elit</a>.
+                        </p>
+                        
+            
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. Sunt quia totam reprehenderit ratione voluptatibus similique, atque inventore nulla odit. Dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. unt quia totam <a href="#">reprehenderit ratione</a> voluptatibus similique, atque inventore nulla odit. 
+                        </p>
+            
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. Sunt quia totam reprehenderit ratione voluptatibus similique, atque inventore nulla odit. Dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. 
+                        </p>
+            
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora...
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. Sunt quia totam reprehenderit ratione voluptatibus similique, atque inventore nulla odit. Dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. unt quia totam <a href="#">reprehenderit ratione</a> voluptatibus similique, atque inventore nulla odit. 
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. Sunt quia totam reprehenderit ratione voluptatibus similique, atque inventore nulla odit. Dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. unt quia totam <a href="#">reprehenderit ratione</a> voluptatibus similique, atque inventore nulla odit. 
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. Sunt quia totam reprehenderit ratione voluptatibus similique, atque inventore nulla odit. Dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. unt quia totam <a href="#">reprehenderit ratione</a> voluptatibus similique, atque inventore nulla odit. 
+                        </p>
+                    </div>
+                </section>
+
+                <section class="checkboxes">
+                    <div>
+                        <div class="row">
+                            <div> 
+                                <span class="block">Blue <-> Green</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="multicolumncolor" value="supress"> <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">White BG</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="multicolumnwhite" value="supress"> <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">Border</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="multicolumnborder" value="supress"> <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">Image</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="multicolumnimage" value="supress"> <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">video</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="multicolumnvideo" value="supress"> <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">2 columns</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="multicolumn2" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">3 columns</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="multicolumn3" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">4 columns</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="multicolumn4" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="block">5 columns</span>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="multicolumn5" value="supress">
+                                    <label></label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <section>
+                    <a href="#">
+                        <div class="quote-container" data-scrim-top="3" style="background-image: url(assets/img/jessica-olof-engvall.jpg);">
+                            <div class="quote">
+                                <blockquote>Det magiska ögonblicket kom när systemet slogs på och jag insåg att elmätaren stannade på noll och solen även på kvällen försörjde hela huset inklusive den uppvärmda poolen.</blockquote>
+                                <cite>Familjen Engvall</cite>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+                <section class="product-boxes mb30">
+                    <div class="product-box changeme22 blue">
+                        <div class="product-info changeme22 blue">
+                            <h3>Vår största varvtalsstyrda bergvärmepump</h2>
+                            <p style="quotes: auto;">
+                                NIBE F1355 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa delectus, necessitatibus minus omnis ipsam voluptates commodi dolorum inventore maxime libero eius architecto consequatur ea soluta.
+                            </p>
+                            <a href="#">
+                                <h4 class="link">NIBE F1355</h4>
+                            </a>
+                        </div>
+
+                        <div class="product-image" style="background-image: url(assets/img/NIBE_S1255.png);">
+                            <div class="streamer my-streamer changeme22 blue">Nyhet!</div>
+                        </div>
+                    </div>
+
+                    <div class="product-box changeme22 blue">
+                        <div class="product-info changeme22 blue">
+                            <h3>Vår största varvtalsstyrda bergvärmepump</h2>
+                            <p>
+                                NIBE F1355 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa delectus, necessitatibus minus omnis ipsam voluptates commodi dolorum inventore maxime libero eius architecto consequatur ea soluta.
+                            </p>
+                            <a href="#">
+                                <h4 class="link">NIBE F1355</h4>
+                            </a>
+                        </div>
+
+                        <div class="product-image" style="background-image: url(assets/img/NIBE-F730.png);">
+                            <div class="streamer my-streamer changeme22 blue">Nyhet!</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="product-boxes">
+                    <div class="product-box changeme22 blue">
+                        <div class="product-info changeme22 blue">
+                            <h3>Vår största varvtalsstyrda bergvärmepump</h2>
+                            <p>
+                                NIBE F1355 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa delectus, necessitatibus minus omnis ipsam voluptates commodi dolorum inventore maxime libero eius architecto consequatur ea soluta.
+                            </p>
+                            <a href="#">
+                                <h4 class="link">NIBE F1355</h4>
+                            </a>
+                        </div>
+
+                        <div class="product-image" style="background-image: url(assets/img/NIBE_F2120_8kW.png);">
+                            <div class="streamer my-streamer changeme22 blue">Nyhet!</div>
+                        </div>
+                    </div>
+
+                    <div class="product-box changeme22 blue">
+                        <div class="product-info changeme22 blue">
+                            <h3>Vår största varvtalsstyrda bergvärmepump</h2>
+                            <p>
+                                NIBE F1355 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa delectus, necessitatibus minus omnis ipsam voluptates commodi dolorum inventore maxime libero eius architecto consequatur ea soluta.
+                            </p>
+                            <a href="#">
+                                <h4 class="link">NIBE F1355</h4>
+                            </a>
+                        </div>
+
+                        <div class="product-image" style="background-image: url(assets/img/pellux-200.png);">
+                            <div class="streamer my-streamer changeme22 blue">Nyhet!</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="checkboxes">
+                    <div class="row">
+                        <div>
+                            <span class="block">Blue <-> Green</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="productcolor" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block">Streamer off <-> on</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="productstreamer" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <script type="text/javascript">
+
+                    function toggle_visibility(id) {
+                    var e = document.getElementById(id);
+                    if(e.style.display == 'block')
+                        e.style.display = 'none';
+                    else
+                        e.style.display = 'block';
+                    }
+                </script>
+                <section>
+                    <div class="price-container" style=" overflow: hidden;">
+                        <div class="price-product" style="background-image: url(assets/img/NIBE-S1255.png);background-repeat: no-repeat;
+                        background-position: bottom center;
+                        background-size: contain; max-height: 300px; min-height: 200px;">
+                            <!-- <div class="streamer blue">Nyhet!</div> -->
+                            
+                        </div>
+                        <div class="price-product-info">
+                            <h3>NIBE S1255</h3>
+                            <p>
+                                NIBE S1255 är en intelligent inverterstyrd bergvärmepump som anpassar sig automatiskt efter dig och ditt smarta hems värmebehov. Den har en integrerad varmvattenberedare och passar alltifrån små hus till stora villor. Välj mellan tre olika effektstorlekar: 1,5-6 kW, 3-12 kW och 4-16 kW.
+                            </p>
+                            <ul>
+                                <li>
+                                    <img src="assets/img/icon-house-blue.svg" alt="Värmeförmåga">
+                                    <p class="productListing-specifications--title">Värmeförmåga</p>
+                                    <p class="productListing-specifications--title">400 M²</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/icon-smart-blue.svg" alt="Artificiell intelligens">
+                                    <p class="productListing-specifications--title">Automatisk</p>
+                                    <p class="productListing-specifications--title">Styrning</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/icon-connected-blue.svg" alt="Artificiell intelligens">
+                                    <p class="productListing-specifications--title">Inbyggd</p>
+                                    <p class="productListing-specifications--title">Wifi</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/gris.svg" alt="Artificiell intelligens">
+                                    <p class="productListing-specifications--title">Smart Price</p>
+                                    <p class="productListing-specifications--title">Adation</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/icon-hot-water-blue.svg" alt="Varmvattenberedare">
+                                    <p class="productListing-specifications--title">Integrerad</p>
+                                    <p class="productListing-specifications--title">Beredare</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-container-col">
+                            <div style="padding-left: 0;">
+                                <span class="item-tech-data__energy-label" style="background-color:#009640;border-left-color:#009640;">A<sup>+++</sup></span>
+                            </div>
+                            <h5>
+                                Rek. pris inkl. moms:
+                            </h5>
+                            <div class="price-container-price">
+                                96.775:-
+                            </div>
+                            <a class="btn btn--blue btn--md type--uppercase mt30" href="javascript:;" onclick="toggle_visibility('product-details1');">
+                                <span class="btn__text text-shadow">Upptäck S1255</span>
+                            </a>
+                        </div>
+
+                        <div id="product-details1" class="product-details" style="width: 90%; height: auto; margin: 20px auto!important; outline: 5px solid #DCE6EF; display: none; text-align: center; z-index: 10;">
+                            <img style="margin: 0 auto 20px auto;" src="assets/img/product-details1.png">
+                        </div>
+                    </div>
+
+                    <div class="price-container">
+                        <div class="price-product">
+                            <a href="javascript:;" onclick="toggle_visibility('product-details2');"><img src="assets/img/NIBE-S1155.webp"></a>
+                        </div>
+                        <div class="price-product-info">
+                            <h3>NIBE S1155</h3>
+                            <p>
+                                NIBE S1155 är en intelligent inverterstyrd bergvärmepump utan integrerad varmvattenberedare, vilket gör den lättplacerad vid lägre takhöjder. Separat varmvattenberedare väljs efter varmvattenbehov. Välj mellan fyra olika effektstorlekar: 1,5-6 kW, 3-12 kW, 4-16 kW och 6-25 kW.
+                            </p>
+                            <ul>
+                                <li>
+                                    <img src="assets/img/icon-house-blue.svg" alt="Värmeförmåga">
+                                    <p class="productListing-specifications--title">Värmeförmåga</p>
+                                    <p class="productListing-specifications--title">400 M²</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/icon-smart-blue.svg" alt="Artificiell intelligens">
+                                    <p class="productListing-specifications--title">Automatisk</p>
+                                    <p class="productListing-specifications--title">Styrning</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/icon-connected-blue.svg" alt="Artificiell intelligens">
+                                    <p class="productListing-specifications--title">Inbyggd</p>
+                                    <p class="productListing-specifications--title">Wifi</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/gris.svg" alt="Artificiell intelligens">
+                                    <p class="productListing-specifications--title">Smart Price</p>
+                                    <p class="productListing-specifications--title">Adation</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/icon-hot-water-extern-blue.svg" alt="Varmvattenberedare">
+                                    <p class="productListing-specifications--title">Extern</p>
+                                    <p class="productListing-specifications--title">Beredare</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-container-col">
+                            <div style="padding-left: 0;">
+                                <span class="item-tech-data__energy-label" style="background-color:#009640;border-left-color:#009640;">A<sup>+++</sup></span>
+                            </div>
+                            <h5>
+                                Rek. pris inkl. moms:
+                            </h5>
+                            <div class="price-container-price">
+                                94.075:-
+                            </div>
+                            <a class="btn btn--blue btn--md type--uppercase mt30" href="javascript:;" onclick="toggle_visibility('product-details2');">
+                                <span class="btn__text text-shadow">Upptäck S1155</span>
+                            </a>
+                        </div>
+                        <div id="product-details2" class="product-details" style="width: 90%; height: auto; margin: 20px auto!important; outline: 5px solid #DCE6EF; display: none; text-align: center; z-index: 10;">
+                            <img style="margin: 0 auto 20px auto;" src="assets/img/product-details2.png">
+                        </div>
+                    </div>
+
+                    <div class="price-container">
+                        <div class="price-product">
+                            <a href="javascript:;" onclick="toggle_visibility('product-details3');"><img src="assets/img/NIBE_F1255_shadow_edit.png"></a>
+                        </div>
+                        <div class="price-product-info">
+                            <h3>NIBE F1255</h3>
+                            <p>
+                                NIBE F1255 är en intelligent inverterstyrd bergvärmepump med integrerad varmvattenberedare som hjälper dig att inte använda mer energi än du behöver eftersom värmepumpen alltid har rätt prestanda och anpassar sig automatiskt efter ditt värmebehov. Välj mellan tre olika effektstorlekar: 1,5-6 kW, 3-12 kW, 4-16 kW.
+                            </p>
+                            <ul>
+                                <li>
+                                    <img src="assets/img/icon-house-blue.svg" alt="Värmeförmåga">
+                                    <p class="productListing-specifications--title">Värmeförmåga</p>
+                                    <p class="productListing-specifications--title">400 M²</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/icon-smart-blue.svg" alt="Artificiell intelligens">
+                                    <p class="productListing-specifications--title">Automatisk</p>
+                                    <p class="productListing-specifications--title">Styrning</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/gris.svg" alt="Artificiell intelligens">
+                                    <p class="productListing-specifications--title">Smart Price</p>
+                                    <p class="productListing-specifications--title">Adation</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/icon-hot-water-blue.svg" alt="Varmvattenberedare">
+                                    <p class="productListing-specifications--title">Integrerad</p>
+                                    <p class="productListing-specifications--title">Beredare</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-container-col">
+                            <div style="padding-left: 0;">
+                                <span class="item-tech-data__energy-label" style="background-color:#009640;border-left-color:#009640;">A<sup>+++</sup></span>
+                            </div>
+                            <h5>
+                                Rek. pris inkl. moms:
+                            </h5>
+                            <div class="price-container-price">
+                                96.775:-
+                            </div>
+                            <a class="btn btn--blue btn--md type--uppercase mt30" href="javascript:;" onclick="toggle_visibility('product-details3');">
+                                <span class="btn__text text-shadow">Upptäck F1255</span>
+                            </a>
+                        </div>
+                        <div id="product-details3" class="product-details" style="width: 90%; height: auto; margin: 20px auto!important; outline: 5px solid #DCE6EF; display: none; text-align: center; z-index: 10;">
+                            <img style="margin: 0 auto 20px auto;" src="assets/img/product-details3.png">
+                        </div>
+                    </div>
+
+                    <div class="price-container">
+                        <div class="price-product">
+                            <a href="javascript:;" onclick="toggle_visibility('product-details4');"><img src="assets/img/NIBE-F1155.png"></a>
+                        </div>
+                        <div class="price-product-info">
+                            <h3>NIBE F1155</h3>
+                            <p>
+                                NIBE F1155 är en intelligent inverterstyrd bergvärmepump utan integrerad varmvattenberedare, vilket gör den lättplacerad vid lägre takhöjder. Separat varmvattenberedare väljs efter varmvattenbehov. Välj mellan tre olika effektstorlekar: 1,5-6 kW, 3-12 kW, 4-16 kW.
+                            </p>
+                            <ul>
+                                <li>
+                                    <img src="assets/img/icon-house-blue.svg" alt="Värmeförmåga">
+                                    <p class="productListing-specifications--title">Värmeförmåga</p>
+                                    <p class="productListing-specifications--title">400 M²</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/icon-smart-blue.svg" alt="Artificiell intelligens">
+                                    <p class="productListing-specifications--title">Automatisk</p>
+                                    <p class="productListing-specifications--title">Styrning</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/gris.svg" alt="Artificiell intelligens">
+                                    <p class="productListing-specifications--title">Smart Price</p>
+                                    <p class="productListing-specifications--title">Adation</p>
+                                </li>
+                                <li>
+                                    <img src="assets/img/icon-hot-water-extern-blue.svg" alt="Varmvattenberedare">
+                                    <p class="productListing-specifications--title">Extern</p>
+                                    <p class="productListing-specifications--title">Beredare</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-container-col">
+                            <div style="padding-left: 0;">
+                                <span class="item-tech-data__energy-label" style="background-color:#009640;border-left-color:#009640;">A<sup>+++</sup></span>
+                            </div>
+                            <h5>
+                                Rek. pris inkl. moms:
+                            </h5>
+                            <div class="price-container-price">
+                                91.800:-
+                            </div>
+                            <a class="btn btn--blue btn--md type--uppercase mt30" href="javascript:;" onclick="toggle_visibility('product-details4');">
+                                <span class="btn__text text-shadow">Upptäck F1155</span>
+                            </a>
+                        </div>
+                        <div id="product-details4" class="product-details" style="width: 90%; height: auto; margin: 20px auto!important; outline: 5px solid #DCE6EF; display: none; text-align: center; z-index: 10;">
+                            <img style="margin: 0 auto 20px auto;" src="assets/img/product-details4.png">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="checkboxes">
+                    <div class="row">
+                        <div>
+                            <span class="block">Blue <-> Green</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="faq-color" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container faq blue changeme24">
+                        <div class="row">
+                            <div class="accordion-heading">
+                                <h3>Frågor & svar</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore temporibus rerum velit.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 accordion-container">
+                                <ul class="accordion accordion-1 accordion--oneopen">
+                                    <li>
+                                        <div class="accordion__title">
+                                            <span class="h5">Saepe doloremque tenetur ad iusto</span>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure quaerat autem quis error odio earum pariatur beatae illo. Voluptas, fugiat! Saepe doloremque tenetur ad iusto vitae dolor numquam labore culpa, voluptas animi nisi recusandae maxime architecto quos.
+                                            </p>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui illo dignissimos cum animi doloremque officia consequatur eum ratione asperiores, alias voluptatem culpa beatae perferendis.
+                                            </p>
+
+                                            <div class="accordion-image-row">
+                                                <div class="accordion-image-row-item">
+                                                    <figure>
+                                                        <img src="assets/img/accordion-image.jpg">
+                                                        <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo porro, nostrum necessitatibus libero officiis hic.</figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div class="accordion-image-row-item">
+                                                    <figure>
+                                                        <img src="assets/img/accordion-image.jpg">
+                                                        <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo porro nostrum.</figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div class="accordion-image-row-item">
+                                                    <figure>
+                                                        <img src="assets/img/accordion-image.jpg">
+                                                        <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo porro, nostrum necessitatibus.</figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div class="accordion-image-row-item">
+                                                    <figure>
+                                                        <img src="assets/img/accordion-image.jpg">
+                                                        <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo porro nostrum necessitatibus libero.</figcaption>
+                                                    </figure>
+                                                </div>
+                                                <div class="accordion-image-row-item">
+                                                    <figure>
+                                                        <img src="assets/img/accordion-image.jpg">
+                                                        <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo porro, nostrum necessitatibus libero officiis hic.</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="accordion__title">
+                                            <span class="h5">Officia consequatur eum</span>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure quaerat autem quis error odio earum pariatur beatae illo. Voluptas, fugiat! Saepe doloremque tenetur ad iusto vitae dolor numquam labore culpa, voluptas animi nisi recusandae maxime architecto quos.
+                                            </p>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui illo dignissimos cum animi doloremque officia consequatur eum ratione asperiores, alias voluptatem culpa beatae perferendis.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="accordion__title">
+                                            <span class="h5">Consectetur adipisicing</span>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <div class="columns columns2 white">
+                                                <h4>Sunt quia totam</h4>
+                                                <p>
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. <a href="#">Distinctio numquam</a> alias voluptate sequi soluta officiis vitae aut quaerat tempora. Sunt quia totam reprehenderit ratione voluptatibus similique, atque inventore nulla odit.
+                                                </p>
+                                    
+                                                <p>
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora.  Dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora.
+                                                </p>
+                                    
+                                                <p>
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. Sunt quia totam reprehenderit ratione voluptatibus similique, atque inventore nulla odit. Dolor sit, amet consectetur <a href="#">adipisicing elit</a>.
+                                                </p>
+                                                
+                                    
+                                                <p>
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. Sunt quia totam reprehenderit ratione voluptatibus similique, atque inventore nulla odit. Dolor sit, amet consectetur adipisicing elit. Distinctio numquam alias voluptate sequi soluta officiis vitae aut quaerat tempora. unt quia totam <a href="#">reprehenderit ratione</a> voluptatibus similique, atque inventore nulla odit. 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="checkboxes">
+                    <div class="row">
+                        <div class="hidden-xs">
+                            <span class="block">Left <-> Right</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="feature-list-direction" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block">Blue <-> Green</span>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="feature-list-color" value="supress">
+                                <label></label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section style="border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+                <div class="container" style="padding: 80px 0">
+                    <div class="row justify-content-center">
+                        <div class="text-center mb30" style="padding: 0px 28px">
+                            <h2 class="blue">Hitta rätt värmepump</h2>
+                            <p>Använd vår guide för att hitta rätt värmepump för ditt behov. Det tar bara en minut.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-lg-10">
+                            <div class="wizard mywizard">
+                                <h5></h5>
+                                <section class="text-center">
+                                    <div class="row justify-content-center pos-vertical-center">
+                                        <div class="col-md-12 col-lg-7">
+                                            <div>
+                                                <h3 class="blue">Husets storlek och ort</h3>
+                                                <form class="text-left form-email row mx-0" style="margin-top: 1.78571429em;" data-success="Thanks for your enquiry, we'll be in touch shortly." data-error="Please fill in all fields correctly.">
+                                                    <div class="col-md-12">
+                                                        <input type="text" name="size" placeholder="Storlek m²" class="validate-required">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <input type="text" name="city"placeholder="Ort" class="validate-required validate-email">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <h5></h5>
+                                <section class="text-center">
+                                    <div class="pos-vertical-center">
+                                        <h3 class="blue">Nybyggnation eller byte av befintligt värmesystem?</h3>
+                                        <div class=" mt40 changeme14 changeme12 blue">
+                                            <div class="input-radio input-radio--innerlabel" style="margin-right: 20px;">
+                                                <input id="radio-1" type="radio" name="radio" value="radio1" />
+                                                <label for="radio-1">Nybyggnation</label>
+                                            </div>
+                                            <div class="input-radio input-radio--innerlabel">
+                                                <input id="radio-2" type="radio" name="radio" value="radio2" />
+                                                <label for="radio-2">Utbyte</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <h5></h5>
+                                <section class="text-center">
+                                    <div class="pos-vertical-center">
+                                        <h3 class="blue">Kommer huset ha en eller flera våningar?</h3>
+                                        <div class=" mt40 changeme14 changeme12 blue">
+                                            <div class="input-radio input-radio--innerlabel" style="margin-right: 20px;">
+                                                <input id="radio-3" type="radio" name="radio" value="radio3" />
+                                                <label for="radio-3">En våning</label>
+                                            </div>
+                                            <div class="input-radio input-radio--innerlabel">
+                                                <input id="radio-4" type="radio" name="radio" value="radio4" />
+                                                <label for="radio-4">Fler våningar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <h5></h5>
+                                <section class="text-center">
+                                    <div class="pos-vertical-center">
+                                        <h3 class="blue">Ska värmesystemet även värma garaget och/eller pool?</h3>
+                                        <div class=" mt40 changeme14 changeme12 blue">
+                                            <div class="input-radio input-radio--innerlabel" style="margin-right: 20px;">
+                                                <input id="radio-5" type="radio" name="radio" value="radio5" />
+                                                <label for="radio-5">Ja</label>
+                                            </div>
+                                            <div class="input-radio input-radio--innerlabel" style="margin-right: 20px;">
+                                                <input id="radio-6" type="radio" name="radio" value="radio6" />
+                                                <label for="radio-6">Nej</label>
+                                            </div>
+                                             <div class="input-radio input-radio--innerlabel">
+                                                <input id="radio-7" type="radio" name="radio" value="radio7" />
+                                                <label for="radio-7">Vet ej</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <h5></h5>
+                                <section class="text-center">
+                                    <div class="pos-vertical-center">
+                                        <h3 class="blue">Hur ska ditt hus ventileras?</h3>
+                                        <div class=" mt40 changeme14 changeme12 blue">
+                                            <div class="input-radio input-radio--innerlabel" style="margin-right: 20px;">
+                                                <input id="radio-8" type="radio" name="radio" value="radio8" />
+                                                <label for="radio-8">Frånluft</label>
+                                            </div>
+                                            <div class="input-radio input-radio--innerlabel" style="margin-right: 20px;">
+                                                <input id="radio-9" type="radio" name="radio" value="radio9" />
+                                                <label for="radio-9">Frånluft + Tilluft</label>
+                                            </div>
+                                             <div class="input-radio input-radio--innerlabel">
+                                                <input id="radio-10" type="radio" name="radio" value="radio10" />
+                                                <label for="radio-10">Ej bestämt / Vet ej</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                <section>
+                    <div class="features-list row changeme23 blue">
+                        <div class="box1">
+                            <ul>
+                                <li>
+                                    <img class="svg" src="assets/img/download_document-hexagon.svg" alt="Artificiell intelligens">
+                                    <div>
+                                        <h4>Rubrik</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt quaerat dolore doloremque facere? Magnam deleniti atque tempore!</p>
+                                    </div>
+                                </li>
+                                <li>
+                                   <img class="svg" src="assets/img/bbr-hexagon.svg"alt="Varmvattenberedare">
+                                    <div>
+                                        <h4>Rubrik</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt quaerat dolore doloremque facere? Magnam deleniti atque tempore!</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img class="svg" src="assets/img/display-message-hexagon.svg" alt="Artificiell intelligens">
+                                    <div>
+                                        <h4>Rubrik</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt quaerat dolore doloremque facere? Magnam deleniti atque tempore!</p>
+                                    </div>
+                                </li>
+                             </ul>
+                        </div>
+                        <div class="box2">
+                            <div style="width: 100%; height: 100%;background: #EEE; padding: 15px;">
+                                Some content here...
+                            </div>
+                            <!-- <img src="assets/img/formular.png"> -->
+                            <!-- <img src="assets/img/NIBE_S1255.png" style="max-height: 600px;"> -->
+                            <!-- <iframe style="margin-top: 20px;" src="https://player.vimeo.com/video/664240420?h=f367b2a000?h=f367b2a000&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        
+        <footer class="space--sm footer-2 bg--primary footer-color footer-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-5 col-11 mb20">
+                        <h5 class="type--uppercase">OM NIBE ENERGY SYSTEMS</h5>
+                        <p>
+                            I snart 70 år har NIBE tillverkat energieffektiva och hållbara klimatlösningar för ditt hem. Allt startade i småländska Markaryd och vi värdesätter vårt nordiska arv genom att ta vara på naturens kraft. Vi kombinerar förnybar energi med ny smart teknik för att erbjuda effektiva lösningar så att vi tillsammans kan skapa en mer hållbar framtid.
+                        </p>
+                        <p>
+                            Oavsett om det är en kylig vinterdag eller en varm eftermiddag i sommarsolen behöver vi ett balanserat inomhusklimat som gör att vi kan ha en bekväm vardag oavsett väder. Vårt breda utbud av produkter förser ditt hem med kyla, värme, ventilation och varmvatten så att du kan skapa ett perfekt inomhusklimat med minimal inverkan på naturen.
+                        </p>
+                    </div>
+                    <div class="col-md-1 hidden-xs">
+                        
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-lg-3 mb20">
+                        <h5 class="type--uppercase">Nibe web</h5>
+                        <ul class="list--hover" style="margin-top: -5px;">
+                            <li><a href="#">Produkter</a></li>
+                            <li><a href="#">Hitta en installatör</a></li>
+                            <li><a href="#">Produktvalsguide: Hitta rätt produkt</a></li>
+                            <li><a href="#">Lediga jobb</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Integritetspolicy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+
+                        <h5 class="type--uppercase">KONTAKT</h5>
+                        <ul class="list--hover" style="margin-top: -5px;">
+                            <li><a href="#">Hannabadsvägen 5</a></li>
+                            <li><a href="#">285 32 Markaryd</a></li>
+                            <li><a href="#">info@nibe.se</a></li>
+                            <li><a href="#">Reception 0433 – 27 30 00</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3" style="padding-left: 15px;">
+                        <h5 class="type--uppercase">Service</h5>
+                        <ul class="list--hover" style="margin-top: -5px;">
+                            <li><a href="#">Service på din produkt</a></li>
+                            <li><a href="#">Hitta serviceombud</a></li>
+                            <li><a href="#">Garanti & försäkring</a></li>
+                            <li><a href="#">Telefon kundtjänst:</a></li>
+                            <li><a href="#">0433 - 27 39 95</a></li>
+                        </ul>
+
+                        <h5 class="type--uppercase">Nyhetsbrev</h5>
+                        <ul class="list--hover">
+                            <li><a href="#">Prenumerera</a></li>
+                        </ul>
+                        <h5 class="type--uppercase mb10">Social media</h5>
+                        <ul class="list--hover">
+                            <li>
+                                <a href="#">
+                                    <img class="svg" src="assets/img/social-facebook.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="svg" src="assets/img/social-linkedin.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="svg" src="assets/img/social-youtube.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <section class="mt50 checkboxes">
+            <div class="row">
+                <div>
+                    <span class="block">Blue</span>
+                    <div class="input-checkbox">
+                        <input type="checkbox" id="footer-blue" value="supress">
+                        <label></label>
+                    </div>
+                </div>
+                <div>
+                    <span class="block">Green</span>
+                    <div class="input-checkbox">
+                        <input type="checkbox" id="footer-green" value="supress">
+                        <label></label>
+                    </div>
+                </div>
+                <div>
+                    <span class="block">Blackish</span>
+                    <div class="input-checkbox">
+                        <input type="checkbox" id="footer-blackish" value="supress">
+                        <label></label>
+                    </div>
+                </div>
+                <div>
+                    <span class="block">Grey</span>
+                    <div class="input-checkbox">
+                        <input type="checkbox" id="footer-grey" value="supress">
+                        <label></label>
+                    </div>
+                </div>
+                <div>
+                    <span class="block">White</span>
+                    <div class="input-checkbox">
+                        <input type="checkbox" id="footer-white" value="supress">
+                        <label></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="notification pos-top pos-right search-box bg--white border--bottom" data-animation="from-top" data-notification-link="search-box">
+            <form>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <input type="search" name="query" placeholder="Skriv sökord och tryck ENTER">
+                    </div>
+                </div>
+                <!--end of row-->
+            </form>
+        <div class="notification-close-cross notification-close"></div>
+    </div>
+
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+
+        <script src="assets/js/jquery-3.1.1.min.js"></script>
+        <script src="assets/js/smooth-scroll.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/color-svg.js"></script>
+        <script src="assets/js/state-change.js"></script>
+        <script src="assets/js/jquery.steps.min.js"></script>
+
+        <script>
+            $(function () {
+                $('.menu-horizontal li a').each(function () {
+                    if ($(this).prop('href') == window.location.href) {
+                            $(this).addClass('active');
+                    }
+                });
+            });
+    
+            // sets class active to menu with ID om-oss on page load
+            $(document).ready(function(){
+                $('#support').addClass('active');
+            });
+        </script>
+
+        <script>
+            inlineSVG.init({
+            svgSelector: 'img.svg', // the class attached to all images that should be inlined
+            initClass: 'js-inlinesvg', // class added to <html>
+            }, function () {
+            console.log('All SVGs inlined');
+            });
+        </script>
+
+    </body>
+
+</html>

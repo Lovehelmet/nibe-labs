@@ -4147,7 +4147,7 @@ Copyright (c) 2014 Daniel Eden
 
 .price-product-info ul li img {
   height: 52px;
-  margin: 10px auto;
+  margin: 10px auto 1px auto;
 }
 
 .price-product-info ul li {

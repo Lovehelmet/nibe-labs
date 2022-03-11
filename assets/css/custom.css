@@ -5354,6 +5354,12 @@ cite {
     padding: 1.6em 0;
   }
 
+  .accordion__content img {
+    max-width: 100%;
+    margin: 0.2em auto 1.2em auto !important;
+    float: left;
+  }
+
   .accordion-image-row {
     display: flex !important;
     flex-direction: column;
@@ -5407,6 +5413,12 @@ h5:not(:last-child),
     height: 100%;
     box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
     width: 33em;
+  }
+
+  .accordion__content img {
+    max-width: 49%;
+    margin: 0.3em 1em 0.5em 0em !important;
+    float: left;
   }
 }
 @media only screen and (max-width: 990px) {
@@ -5597,6 +5609,30 @@ h5:not(:last-child),
   .text-fullwidth-block {
     width: 58vw;
     padding: 1.6em 0;
+  }
+
+  .accordion__content img {
+    max-width: 33.33333%;
+    margin: 0.3em 1em 1em 0em !important;
+    float: left;
+  }
+
+  .accordion__content .columns2 img {
+    max-width: 45%;
+    margin: 0.3em 1em 1em 0em !important;
+    float: left;
+  }
+
+  .accordion__content .columns3 img {
+    max-width: 100%;
+    margin: 0.3em 1em 1em 0em !important;
+    float: left;
+  }
+
+  .accordion__content .columns4 img {
+    max-width: 100%;
+    margin: 0.3em 1em 1em 0em !important;
+    float: left;
   }
 }
 @media (max-width: 1500px) {
@@ -6810,7 +6846,7 @@ h5:not(:last-child),
 .columns img {
   width: clamp(250px, 100%, 1380px);
   display: block;
-  margin: 20px auto 20px !important;
+  margin: 20px auto 20px;
   border-radius: 3px;
 }
 

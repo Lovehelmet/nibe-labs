@@ -5126,7 +5126,7 @@ cite {
 
 [role~=tooltip][data-microtip-position|=top]::before {
   transform: translate3d(-50%, 0, 0);
-  bottom: 100%;
+  bottom: 90%;
   left: 50%;
 }
 
@@ -5136,7 +5136,7 @@ cite {
 
 [role~=tooltip][data-microtip-position|=top]::after {
   transform: translate3d(-50%, 0, 0);
-  bottom: 100%;
+  bottom: 90%;
   left: 50%;
 }
 

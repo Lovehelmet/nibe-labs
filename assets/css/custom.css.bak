@@ -245,7 +245,6 @@ img {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
-
 .hero-text-block h1 {
   font-size: clamp(100%, 6.1vw, 4.9em);
   line-height: 1.1em;
@@ -257,7 +256,6 @@ img {
   -ms-hyphens: auto;
   hyphens: auto;
 }
-
 .hero-text-block p {
   font-size: clamp(1.33em, 2.9vw, 1.95em);
   line-height: 1.35em;
@@ -265,7 +263,6 @@ img {
   margin-bottom: 0;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
-
 .hero-text-block .btn__text {
   font-size: clamp(1.05em, 1.4vw, 1.4em) !important;
   line-height: 1.5em;
@@ -283,7 +280,6 @@ img {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
   overflow-wrap: break-word;
 }
-
 .mynewhero p {
   font-size: clamp(1.33em, 2.9vw, 1.95em);
   line-height: 1.35em;
@@ -291,7 +287,6 @@ img {
   margin-bottom: 0;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
-
 .mynewhero .btn__text {
   font-size: clamp(1.05em, 1.4vw, 1.4em) !important;
   line-height: 1.5em;
@@ -332,14 +327,12 @@ h3 {
   font-weight: 600 !important;
   letter-spacing: 0.01em;
 }
-
 .column-txt h4 {
   font-size: clamp(19px, 1.5vw, 24px) !important;
   line-height: 1.3em;
   font-weight: 600 !important;
   letter-spacing: 0.01em;
 }
-
 .column-txt p {
   font-size: clamp(1.2rem, 2.5vw, 1.25rem);
   line-height: 1.35em;
@@ -353,21 +346,18 @@ h3 {
   font-weight: 600 !important;
   margin-bottom: 0.5em;
 }
-
 .column-txt-3 h4 {
   font-size: clamp(19px, 1.5vw, 24px) !important;
   line-height: 1.3em;
   font-weight: 600 !important;
   letter-spacing: 0.2px;
 }
-
 .column-txt-3 p {
   font-size: clamp(1.2rem, 2.5vw, 1.25rem) !important;
   line-height: 1.45em;
   margin-bottom: 1em;
   color: #666666;
 }
-
 .column-txt-3 li {
   font-size: clamp(1.3em, 1.3vw, 1.2em) !important;
   line-height: 1.45em;
@@ -382,14 +372,12 @@ h3 {
   letter-spacing: 0.2px;
   margin-bottom: 0.4em;
 }
-
 .col3-container h4 {
   font-size: clamp(18px, 1.4vw, 24px) !important;
   line-height: 1.3em;
   font-weight: 600 !important;
   letter-spacing: 0.2px;
 }
-
 .col3-container p {
   font-size: clamp(15px, 1.1vw, 18px) !important;
   line-height: 1.45em;
@@ -552,14 +540,13 @@ a.btn {
   height: 40px;
   z-index: 99;
 }
-
 .cta-anim-butt a {
   border-radius: 0px;
   visibility: visible;
   -webkit-animation-delay: 1.9s;
-  animation-delay: 1.9s;
+          animation-delay: 1.9s;
   -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
+          animation-name: fadeInRight;
 }
 
 .imagebg:not(.image--light) .btn:not([class*=primary]) {
@@ -592,7 +579,7 @@ svg.orange path {
   stroke-linejoin: round;
   stroke-dasharray: 15%;
   -webkit-animation: dash 10s linear alternate infinite;
-  animation: dash 10s linear alternate infinite;
+          animation: dash 10s linear alternate infinite;
 }
 
 svg.blackish path {
@@ -609,6 +596,7 @@ svg.blackish path {
     stroke-dashoffset: 0;
   }
 }
+
 @keyframes dash {
   from {
     stroke-dashoffset: 822;
@@ -633,7 +621,7 @@ svg.fuchsia:hover path {
   stroke: fuchsia !important;
   stroke-dasharray: 15%;
   -webkit-animation: dash 10s linear alternate infinite;
-  animation: dash 10s linear alternate infinite;
+          animation: dash 10s linear alternate infinite;
 }
 
 /*!
@@ -3020,12 +3008,10 @@ Copyright (c) 2014 Daniel Eden
   margin-right: 0.95em;
   margin-left: 0.95em;
 }
-
 .menu-horizontal li li:first-child {
   margin-right: 0.95em;
   margin-left: 0;
 }
-
 .menu-horizontal li li:last-child {
   margin-right: 0;
   margin-left: 0.95em !important;
@@ -3047,7 +3033,6 @@ Copyright (c) 2014 Daniel Eden
 .menu-horizontal li a.active {
   opacity: 1;
 }
-
 .menu-horizontal li a.active::before {
   content: "";
   position: absolute;
@@ -3083,12 +3068,10 @@ Copyright (c) 2014 Daniel Eden
   font-weight: 300;
   font-size: 0.83em !important;
 }
-
 .breadcrumb-bar a {
   color: #252525;
   font-weight: 300 !important;
 }
-
 .breadcrumb-bar li:nth-child(n+2):before {
   content: "|";
   color: #252525;
@@ -3169,9 +3152,8 @@ Copyright (c) 2014 Daniel Eden
   text-align: center;
   flex-direction: row;
   -moz-column-gap: 1.5em;
-  column-gap: 1.5em;
+       column-gap: 1.5em;
 }
-
 .split img {
   max-height: 360px;
   margin: auto;
@@ -3182,9 +3164,8 @@ Copyright (c) 2014 Daniel Eden
     flex-direction: row;
     text-align: left;
     -moz-column-gap: 1.8em;
-    column-gap: 1.8em;
+         column-gap: 1.8em;
   }
-
   .split img {
     max-height: 470px;
     margin: auto;
@@ -3241,9 +3222,9 @@ Copyright (c) 2014 Daniel Eden
   animation: kenBurns 32s ease alternate infinite;
   -webkit-animation: kenBurns 32s ease alternate infinite;
   -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+          animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @keyframes kenBurns {
@@ -3293,44 +3274,36 @@ Copyright (c) 2014 Daniel Eden
   gap: 1em;
   transition: 250ms ease;
 }
-
 .product-box h3 {
   font-size: clamp(2.43em, 1.2vw, 3em) !important;
   line-height: 1.15em;
   font-weight: 600 !important;
   letter-spacing: 0.005em;
 }
-
 .product-box.blue {
   background-color: #dce6ef;
 }
-
 .product-box .blue h3 {
   color: #113d79;
 }
-
 .product-box.green {
   background-color: #d5e2ce;
 }
-
 .product-box .green h3 {
   color: #005b31;
 }
-
 .product-box:hover {
   transform: scale(1.014);
   box-shadow: 0 10px 15px rgba(85, 85, 85, 0.1);
   cursor: pointer;
   font-smooth: subpixel-antialiased;
 }
-
 .product-box .product-info h4 {
   font-size: clamp(2em, 1.2vw, 2em) !important;
   line-height: 1.35em;
   font-weight: 600 !important;
   letter-spacing: 0.005em;
 }
-
 .product-box .product-info.blue h4::after {
   height: 12px;
   content: "";
@@ -3339,7 +3312,6 @@ Copyright (c) 2014 Daniel Eden
   margin: 5px 0 20px 0;
   display: block;
 }
-
 .product-box .product-info.green h4::after {
   height: 12px;
   content: "";
@@ -3348,15 +3320,12 @@ Copyright (c) 2014 Daniel Eden
   margin: 5px 0 20px 0;
   display: block;
 }
-
 .product-box .product-info.blue h4.link {
   color: #113d79;
 }
-
 .product-box .product-info.green h4.link {
   color: #005b31;
 }
-
 .product-box p {
   font-size: clamp(1.2rem, 2.5vw, 1.25rem) !important;
   line-height: 1.35em;
@@ -3369,7 +3338,6 @@ Copyright (c) 2014 Daniel Eden
   padding: 3em 3.5em;
   width: 60%;
 }
-
 .product-info a {
   text-decoration: none;
 }
@@ -3400,14 +3368,12 @@ Copyright (c) 2014 Daniel Eden
   box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
 }
-
 .product-box .streamer.blue {
   color: #fff;
   background: #2c60a1 !important;
   border: 2px solid #fff;
   padding: 0;
 }
-
 .product-box .streamer.green {
   color: #fff;
   background: #318244 !important;
@@ -3421,7 +3387,7 @@ Copyright (c) 2014 Daniel Eden
   flex-wrap: wrap;
   justify-content: space-around;
   -moz-column-gap: 20px;
-  column-gap: 20px;
+       column-gap: 20px;
 }
 
 .cards .card-content {
@@ -3438,20 +3404,17 @@ Copyright (c) 2014 Daniel Eden
 .cards .card-content {
   padding: 1.8em 1.5em;
 }
-
 .cards .card-content h2 {
   margin-top: 0;
   margin-bottom: 0.5em;
   font-weight: 500;
 }
-
 .cards .card-content h3 {
   font-size: clamp(26px, 1.5vw, 38px) !important;
   line-height: 1.2em;
   font-weight: 600 !important;
   letter-spacing: 0.2px;
 }
-
 .cards .card-content h4 {
   font-size: clamp(18px, 1.4vw, 22px) !important;
   line-height: 1.3em;
@@ -3459,7 +3422,6 @@ Copyright (c) 2014 Daniel Eden
   letter-spacing: 0.2px;
   margin-bottom: 0;
 }
-
 .cards .card-content p {
   font-size: clamp(1.2rem, 2.5vw, 1.25rem) !important;
   font-weight: 400;
@@ -3467,7 +3429,6 @@ Copyright (c) 2014 Daniel Eden
   margin-bottom: 1em;
   color: #666666;
 }
-
 .cards .card-content .btn__text {
   font-size: clamp(12px, 1.1vw, 1.03rem) !important;
   font-weight: 500 !important;
@@ -3481,7 +3442,6 @@ Copyright (c) 2014 Daniel Eden
   background: #d5e2ce;
   margin-bottom: 2em;
 }
-
 .card img {
   display: block;
   border: 0;
@@ -3489,7 +3449,6 @@ Copyright (c) 2014 Daniel Eden
   height: auto;
   border-radius: 4px 4px 0 0;
 }
-
 .card a {
   color: #318244;
   text-decoration: none;
@@ -3498,20 +3457,16 @@ Copyright (c) 2014 Daniel Eden
 .card.green h2 {
   color: #005b31;
 }
-
 .card.green h3 {
   color: #005b31;
 }
-
 .card.green h4 {
   color: #318244;
 }
-
 .card.green a.btn--green {
   background: #318244;
   border-color: #318244;
 }
-
 .card.green svg {
   width: 80px;
   height: 80px;
@@ -3521,28 +3476,22 @@ Copyright (c) 2014 Daniel Eden
   stroke-miterlimit: 4;
   margin: 5px auto 25px auto !important;
 }
-
 .card.green svg path {
   stroke: #318244 !important;
 }
-
 .card.green svg rect {
   fill: #318244 !important;
   stroke: none !important;
 }
-
 .card.green svg polygon {
   fill: #318244 !important;
 }
-
 .card.green svg line {
   stroke: #318244 !important;
 }
-
 .card.green svg polyline {
   stroke: #318244 !important;
 }
-
 .card.green svg circle {
   fill: #318244 !important;
   stroke: none !important;
@@ -3951,13 +3900,11 @@ Copyright (c) 2014 Daniel Eden
   flex-wrap: wrap;
   align-content: space-between;
 }
-
 .features-list .box1 {
   flex: 1;
   min-height: 200px;
   padding: 30px 20px;
 }
-
 .features-list .box2 {
   display: flex;
   flex: 1;
@@ -3965,7 +3912,6 @@ Copyright (c) 2014 Daniel Eden
   padding: 0px 20px;
   justify-content: center;
 }
-
 .features-list ul {
   display: flex;
   flex-direction: column;
@@ -3974,17 +3920,14 @@ Copyright (c) 2014 Daniel Eden
   padding: 0;
   list-style: none;
 }
-
 .features-list li {
   display: flex;
   line-height: 1.5;
   margin: 0 0 2.2em 0;
 }
-
 .features-list li:last-child {
   margin: 0;
 }
-
 .features-list svg {
   display: block;
   min-width: 60px !important;
@@ -3994,37 +3937,29 @@ Copyright (c) 2014 Daniel Eden
 .features-list.blue h3 {
   color: #113d79;
 }
-
 .features-list.blue h4 {
   font-size: 1.6em;
   color: #113d79;
 }
-
 .features-list.blue svg {
   stroke: #2c60a1 !important;
 }
-
 .features-list.blue svg path {
   stroke: #2c60a1 !important;
 }
-
 .features-list.blue svg rect {
   fill: #2c60a1 !important;
   stroke: none !important;
 }
-
 .features-list.blue svg polygon {
   fill: #2c60a1 !important;
 }
-
 .features-list.blue svg line {
   stroke: #2c60a1 !important;
 }
-
 .features-list.blue svg polyline {
   stroke: #2c60a1 !important;
 }
-
 .features-list.blue svg circle {
   fill: #2c60a1 !important;
   stroke: none !important;
@@ -4033,37 +3968,29 @@ Copyright (c) 2014 Daniel Eden
 .features-list.green h3 {
   color: #005b31;
 }
-
 .features-list.green h4 {
   font-size: 1.6em;
   color: #005b31;
 }
-
 .features-list.green svg {
   stroke: #318244 !important;
 }
-
 .features-list.green svg path {
   stroke: #318244 !important;
 }
-
 .features-list.green svg rect {
   fill: #318244 !important;
   stroke: none !important;
 }
-
 .features-list.green svg polygon {
   fill: #318244 !important;
 }
-
 .features-list.green svg line {
   stroke: #318244 !important;
 }
-
 .features-list.green svg polyline {
   stroke: #318244 !important;
 }
-
 .features-list.green svg circle {
   fill: #318244 !important;
   stroke: none !important;
@@ -4173,7 +4100,7 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-duration: 0.6s;
   animation-duration: 0.6s;
   -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -4258,22 +4185,18 @@ footer {
   background-color: #113D79 !important;
   color: #fff !important;
 }
-
 footer p {
   color: #fff !important;
 }
-
 footer svg {
   width: 42px;
   height: 42px;
 }
-
 footer svg path {
   stroke: #fff !important;
   stroke-width: 1 !important;
   stroke-miterlimit: 0 !important;
 }
-
 footer a {
   color: #fff !important;
 }
@@ -4281,15 +4204,12 @@ footer a {
 .footer-blue h5 {
   color: #fff !important;
 }
-
 .footer-blue p {
   color: #fff !important;
 }
-
 .footer-blue a {
   color: #fff !important;
 }
-
 .footer-blue svg path {
   stroke: #fff !important;
   stroke-width: 1 !important;
@@ -4300,15 +4220,12 @@ footer a {
   background-color: #005B31 !important;
   color: #fff !important;
 }
-
 .footer-green h5 {
   color: #fff !important;
 }
-
 .footer-green a {
   color: #fff !important;
 }
-
 .footer-green svg path {
   stroke: #fff !important;
   stroke-width: 1 !important;
@@ -4319,15 +4236,12 @@ footer a {
   background-color: #252525 !important;
   color: #fff !important;
 }
-
 .footer-blackish h5 {
   color: #fff !important;
 }
-
 .footer-blackish a {
   color: #fff !important;
 }
-
 .footer-blackish svg path {
   stroke: #fff !important;
   stroke-width: 1 !important;
@@ -4338,19 +4252,15 @@ footer a {
   background-color: #eee !important;
   color: #252525 !important;
 }
-
 .footer-grey h5 {
   color: #252525 !important;
 }
-
 .footer-grey p {
   color: #252525 !important;
 }
-
 .footer-grey a {
   color: #252525 !important;
 }
-
 .footer-grey svg path {
   stroke: #252525 !important;
   stroke-width: 1 !important;
@@ -4362,19 +4272,15 @@ footer a {
   background-color: #fff !important;
   color: #252525 !important;
 }
-
 .footer-white h5 {
   color: #252525 !important;
 }
-
 .footer-white p {
   color: #252525 !important;
 }
-
 .footer-white a {
   color: #252525 !important;
 }
-
 .footer-white svg path {
   stroke: #252525 !important;
   stroke-width: 1 !important;
@@ -4386,7 +4292,6 @@ footer a {
   margin: 0 0 20px 0px;
   padding: 0;
 }
-
 .footer-2 ul li {
   display: inline-block;
   font-size: 1em;
@@ -4394,7 +4299,6 @@ footer a {
   margin-right: 10px;
   transform: 250ms ease;
 }
-
 .footer-2 ul li:hover {
   transform: scale(1.05);
 }
@@ -5548,7 +5452,6 @@ h2.blue {
   margin-top: 0;
   margin-bottom: 0.25em;
 }
-
 .mywizard h3 .blue {
   color: #2c60a1;
 }
@@ -6019,41 +5922,41 @@ h5:not(:last-child),
 
 .columns {
   -moz-columns: 1 250px;
-  columns: 1 250px;
+       columns: 1 250px;
   -moz-column-gap: 3.2em;
-  column-gap: 3.2em;
+       column-gap: 3.2em;
   padding: 2.2em;
 }
 
 .columns.columns2 {
   -moz-columns: 2 250px;
-  columns: 2 250px;
+       columns: 2 250px;
   -moz-column-gap: 3.2em;
-  column-gap: 3.2em;
+       column-gap: 3.2em;
   padding: 2.2em;
 }
 
 .columns.columns3 {
   -moz-columns: 3 250px;
-  columns: 3 250px;
+       columns: 3 250px;
   -moz-column-gap: 3.2em;
-  column-gap: 3.2em;
+       column-gap: 3.2em;
   padding: 2.2em;
 }
 
 .columns.columns4 {
   -moz-columns: 4 250px;
-  columns: 4 250px;
+       columns: 4 250px;
   -moz-column-gap: 3.2em;
-  column-gap: 3.2em;
+       column-gap: 3.2em;
   padding: 2.2em;
 }
 
 .columns.columns5 {
   -moz-columns: 5 250px;
-  columns: 5 250px;
+       columns: 5 250px;
   -moz-column-gap: 3.2em;
-  column-gap: 3.2em;
+       column-gap: 3.2em;
   padding: 2.2em;
 }
 
@@ -6067,7 +5970,7 @@ h5:not(:last-child),
 .columns.green {
   background: #d5e2ce;
   -moz-column-rule: 1px dotted #73b16c;
-  column-rule: 1px dotted #73b16c;
+       column-rule: 1px dotted #73b16c;
 }
 
 .columns.green h2 {
@@ -6089,7 +5992,7 @@ h5:not(:last-child),
 .columns.blue {
   background: #dce6ef;
   -moz-column-rule: 1px dotted #84bae1;
-  column-rule: 1px dotted #84bae1;
+       column-rule: 1px dotted #84bae1;
 }
 
 .columns.blue h2 {
@@ -6111,7 +6014,7 @@ h5:not(:last-child),
 .columns.white {
   background: #fff;
   -moz-column-rule: 1px dotted #f2f2f2;
-  column-rule: 1px dotted #f2f2f2;
+       column-rule: 1px dotted #f2f2f2;
 }
 
 .columns.border {
@@ -6129,11 +6032,9 @@ h5:not(:last-child),
   margin-top: 0;
   margin-bottom: 1em;
 }
-
 .columns strong {
   font-weight: 500;
 }
-
 .columns img {
   width: clamp(250px, 100%, 1380px);
   display: block;
@@ -6166,14 +6067,12 @@ textarea:focus {
   background-color: #dce6ef;
   max-height: 500px;
 }
-
 .my-product h3 {
   font-size: clamp(2.43em, 1.2vw, 3em) !important;
   line-height: 1.15em;
   font-weight: 600 !important;
   letter-spacing: 0.005em;
 }
-
 .my-product h4::after {
   height: 12px;
   content: "";
@@ -6182,14 +6081,12 @@ textarea:focus {
   margin: 5px 0 20px 0;
   display: block;
 }
-
 .my-product h4.link {
   font-size: clamp(2em, 1.2vw, 2em) !important;
   line-height: 1.35em;
   font-weight: 600 !important;
   letter-spacing: 0.005em;
 }
-
 .my-product p {
   font-size: clamp(1.15em, 1.3vw, 1.2em);
   line-height: 1.35em;
@@ -6210,6 +6107,4 @@ figure figcaption {
 
 .outline {
   outline: 1px solid red;
-}
-
-/*# sourceMappingURL=custom.css.map */
+}/*# sourceMappingURL=custom.css.map */

@@ -5405,6 +5405,10 @@ h5:not(:last-child),
     animation: fadeInDown 0.3s ease-out forwards;
   }
 
+  .bar__module:not(:only-child) .menu-horizontal {
+    top: 4px;
+  }
+
   .notification.side-menu {
     z-index: 9999;
     background: #ffffff;

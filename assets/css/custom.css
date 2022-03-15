@@ -5418,10 +5418,11 @@ cite {
 .row section .details .title {
   font-size: 22px;
   font-weight: 400;
+  color: #113d79;
 }
 
 .row section p {
-  margin: 5px 0 17px 0;
+  margin: 5px 0 0 0;
   line-height: 1.5em;
 }
 

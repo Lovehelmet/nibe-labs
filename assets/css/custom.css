@@ -5354,7 +5354,7 @@ cite {
 }
 
 .wrapper .row section {
-  background: #f9f9f9;
+  background: #f3f7f9;
   border-radius: 5px;
   width: calc(50% - 40px);
   padding: 20px;
@@ -5366,7 +5366,7 @@ cite {
   content: "";
   height: 15px;
   width: 15px;
-  background: #f9f9f9;
+  background: #f3f7f9;
   top: 28px;
   z-index: 1;
   transform: rotate(45deg);

@@ -3961,7 +3961,7 @@ Copyright (c) 2014 Daniel Eden
 }
 
 .card.blue h4 {
-  color: #113d79;
+  color: #2c60a1;
 }
 
 .card.blue a.btn--green {
@@ -4005,7 +4005,7 @@ Copyright (c) 2014 Daniel Eden
 }
 
 .card.blue svg:hover path {
-  stroke: #a8d0ed !important;
+  stroke: #2c60a1 !important;
 }
 
 .card.blue svg rect:hover {

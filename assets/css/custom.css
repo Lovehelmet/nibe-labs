@@ -5546,8 +5546,31 @@ a.app-link {
   font-weight: 600;
 }
 
+.outdoor-product-image {
+  padding: 3px 0 0 0;
+}
+.outdoor-product-image img {
+  margin: auto;
+  max-height: 85px;
+  max-width: 45px;
+}
+
+.indoor-container {
+  width: 210px;
+}
+
+.indoor-product-image {
+  width: 43px;
+  float: left;
+}
+.indoor-product-image img {
+  margin: auto;
+  max-height: 85px;
+  max-width: 35px;
+}
+
 .indoor-module {
-  width: 125px;
+  width: 120px;
   float: right;
   text-align: left;
 }

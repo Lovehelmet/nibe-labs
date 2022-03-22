@@ -5556,7 +5556,7 @@ a.app-link {
 }
 
 .indoor-container {
-  width: 210px;
+  min-width: 190px;
 }
 
 .indoor-product-image {

@@ -4182,7 +4182,7 @@ Copyright (c) 2014 Daniel Eden
   }
 }
 footer {
-  background-color: #113D79 !important;
+  background-color: #113d79 !important;
   color: #fff !important;
 }
 footer p {

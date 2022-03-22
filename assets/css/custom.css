@@ -386,6 +386,14 @@ h3 {
   color: #666666;
 }
 
+.fw400 {
+  font-weight: 400 !important;
+}
+
+th {
+  font-weight: 500;
+}
+
 .btn--lg {
   padding-top: 0.98035714em;
   padding-bottom: 0.88035714em;
@@ -4642,7 +4650,7 @@ Copyright (c) 2014 Daniel Eden
   }
 }
 footer {
-  background-color: #113D79 !important;
+  background-color: #113d79 !important;
   color: #fff !important;
 }
 footer p {
@@ -4677,7 +4685,7 @@ footer a {
 }
 
 .footer-green {
-  background-color: #005B31 !important;
+  background-color: #005b31 !important;
   color: #fff !important;
 }
 .footer-green h5 {
@@ -5516,6 +5524,66 @@ cite {
     margin: 10px 0;
   }
 }
+.app-guidelines {
+  line-height: 0.8em;
+}
+.app-guidelines th {
+  font-size: 0.8rem;
+  background: #5a90c7;
+  color: #fff;
+}
+.app-guidelines td {
+  font-size: 0.7rem;
+}
+
+a.app-link {
+  opacity: 0.9;
+  color: #5a90c7;
+}
+
+.fa-check {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.indoor-module {
+  width: 125px;
+  float: right;
+  text-align: left;
+}
+.indoor-module p {
+  margin-bottom: 0;
+}
+
+.indoor-module p:after {
+  content: "";
+  height: 1px;
+  width: 25%;
+  background: #5a90c7;
+  margin: 3px 0 8px 0;
+  display: block;
+}
+
+.outdoor-module {
+  margin-bottom: 0;
+  font-size: 0.85em;
+  font-weight: 500;
+  text-align: left;
+}
+.outdoor-module p {
+  margin-bottom: 0;
+}
+
+.outdoor-module p:after {
+  content: "";
+  height: 1px;
+  width: 25%;
+  background: #fff;
+  opacity: 0.3;
+  margin: 3px 0 8px 0;
+  display: block;
+}
+
 @media (max-width: 767px) {
   h2,
 .h2 {
@@ -5624,7 +5692,7 @@ h5:not(:last-child),
 
   .notification.side-menu {
     z-index: 9999;
-    background: #ffffff;
+    background: #fff;
     padding-top: 1.35714286em;
     margin: 0;
     height: 100%;
@@ -6241,7 +6309,7 @@ body {
   padding: 2.4em 1.85714286em;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
-  background: #fffffff3;
+  background: #fff;
 }
 
 .search-box .notification-close-cross {
@@ -6321,7 +6389,7 @@ ul.slides h1 {
 }
 
 .box-shadow-small {
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.06) !important;
 }
 
 .box-shadow-big {
@@ -6787,6 +6855,20 @@ h5:not(:last-child),
   flex-basis: 50%;
 }
 
+.column-txt-50 h3 {
+  font-size: clamp(1.8em, 2.1vw, 2.1em) !important;
+  line-height: 1.15em !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em;
+}
+
+.column-txt-50 h4 {
+  font-size: clamp(19px, 1.5vw, 24px) !important;
+  line-height: 1.3em;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em;
+}
+
 .my-2col-75img {
   height: 340px;
   background: #fff;
@@ -7132,7 +7214,7 @@ figure figcaption {
 }
 
 .outline {
-  outline: 1px solid red;
+  outline: 1px solid #ff0000;
 }
 
 .icon-tooltip {

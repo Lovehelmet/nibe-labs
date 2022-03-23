@@ -5571,7 +5571,7 @@ a.app-link {
 
 .indoor-module {
   width: 120px;
-  float: right;
+  margin-left: auto;
   text-align: left;
 }
 .indoor-module p {

@@ -6150,6 +6150,11 @@ h5:not(:last-child),
     -moz-border-radius: 5px;
     border-radius: 5px;
   }
+
+  .mobile-intro-left-col {
+    background: transparent;
+    padding-left: 2.7em !important;
+  }
 }
 .hero-lead {
   font-size: 1.75em;
@@ -6294,6 +6299,11 @@ section.height-auto {
 
   .height-40 {
     height: 40vh !important;
+  }
+
+  .mobile-intro-left-col {
+    background: transparent;
+    padding-left: 6.2em !important;
   }
 }
 @media all and (min-width: 1920px) {

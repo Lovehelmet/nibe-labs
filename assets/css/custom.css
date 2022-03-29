@@ -4110,6 +4110,7 @@ Copyright (c) 2014 Daniel Eden
 .price-container .price-product img {
   min-width: 80px;
   max-width: 160px;
+  max-height: 325px;
   margin: auto;
 }
 

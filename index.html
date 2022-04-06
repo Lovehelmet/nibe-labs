@@ -1162,6 +1162,9 @@
                             </ul>
                         </div>
                         <div class="price-container-col">
+                             <div style="font-size: .58em; padding: 0; line-height: 1.2em; margin-bottom: 1.2em; max-width: 34ch;">
+                                <span class="blabla" style="font-style:italic;">*Exempelvärde för NIBE S1255, 3-12 kW</span>
+                            </div>
                             <div style="padding-left: 0;">
                                 <span class="item-tech-data__energy-label" style="background-color:#009640;border-left-color:#009640;">A<sup>+++</sup></span>
                             </div>
@@ -1721,14 +1724,177 @@
                     </div>
                 </section>
 
-                <section class="section-padding-small text-center mt80 pb60">
+                <style>
+                    .vvs-partner {
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 40px;
+                        flex-wrap: wrap;
+                        align-content: space-between;
+                    }
+
+                    .vvs-partner .box1 {
+                        flex: 1;
+                        min-height: 200px;
+                        width: 60%;
+                        padding: 30px 20px;
+                    }
+
+                    .vvs-partner .box2 {
+                        display: flex;
+                        flex: 1;
+                        min-height: 200px;
+                        width: 40%;
+                        padding: 0px 20px;
+                        justify-content: center;
+                    }
+
+                    .vvs-partner.blue .box1 h2 {
+                        font-size: 2.2em!important;
+                        color: #113d79;
+                    }
+                    
+                    .vvs-partner.blue h2::after {
+                        height: 12px;
+                        content: "";
+                        width: 95px;
+                        background: #a8d0ed;
+                        margin: 8px 0 20px 0;
+                        display: block;
+                    }
+
+                    .vvs-partner.blue h3 {
+                        font-size: 1.7em;
+                        color: #113d79;
+                    }
+
+                    .vvs-partner.blue h4 {
+                        font-size: 1.6em;
+                        color: #113d79;
+                    }
+
+                    .vvs-partner h5:not(:last-child),
+                    .h5:not(:last-child) {
+                        margin-bottom: 0em;
+                    }
+                    .vvs-partner p {
+                        line-height: 1.5;
+                    }
+
+                    .vvs-partner.contact-box {
+                        border: 15px solid #DCE6EF;
+                        padding: 40px 40px;
+                        margin: 30px 4px 50px 4px;
+                        gap: 20px;
+                    }
+
+                    .vvs-partner.contact-box div.box1 table {
+                        border: 1px solid #fff;
+                        padding: 30px;
+                    }
+
+                    table th {
+                        background: none;
+                        color: #252525;
+                    }
+                    table th, table td {
+                        padding: 0.1em;
+                    }
+                    th {
+                        font-weight: 500;
+                    }
+
+                    .vvs-partner.affiliate-box {
+                        padding: 50px 150px;
+                        margin: 0 4px;
+                        gap: 20px;
+                        background: #DCE6EF;
+                        text-align: center;
+                    }
+
+                    @media only screen and (max-width: 990px) {
+                        .vvs-partner {
+                            flex-direction: column;
+                        }
+                    }
+                </style>
+
+                <hr class="mb40" />
+
+                <section>
+                    <div class="vvs-partner row changeme23 blue">
+                        <div class="box1">
+                            <h2>Rybergs Rör AB</h2>
+                            <h5>Hej!</h5>
+                            <p>Vi heter Rybergs Rör AB och vill gärna hjälpa dig att sänka dina energikostnader.</p>
+                            <h5>Om oss</h5>
+                            <p>Rybergs Rör AB är ett familjeföretag som startade 2015. Vi är sju pigga och serviceinriktade installatörer som har lång erfarenhet av alla typer av VVS-arbeten, alla med lite olika specialkompetens.</p>
+                            <h5>Vårt serviceerbjudande</h5>
+                            <p>Vi är rörmokare och erbjuder alla typer av VVS-tjänster, alltifrån reparationer till installationer. Vi arbetar bara med de bästa leverantörerna. När det gäller värmepumpar har vi valt NIBE. Vi är även ett NIBE-auktoriserat serviceombud, vilket betyder att vi kan erbjuda extra hjälp om det skulle behövas.</p>
+                            <h5>Vårt serviceområde</h5>
+                            <p>Vårt kontor ligger i Hässleholm men vårt arbetsområde sträcker sig längre än så. Vi har uppdrag från XX i söder till XX i norr, från XX i väster till YY i öster. Ibland ännu längre. Till exempel när någon av våra kära kunder har flyttat. Välkommen att höra av dig till oss för goda råd, ett kostnadsfritt hembesök och en offert. Läs mer om oss på <a href="https://rybergsror.se" target="_blank">rybergsror.se</a></p>
+                        </div>
+                        <div class="box2 pt30 hidden-xs hidden-sm">
+                            <!-- <div style="width: 100%; height: 100%;background: #EEE; padding: 15px;">
+                                Some content here...
+                            </div> -->
+                            <img src="assets/img/vvs.jpg" style="width: 100%; height: 100%; object-fit: contain;">
+                            <!-- <img src="assets/img/NIBE_S1255.png" style="max-height: 600px;"> -->
+                            <!-- <iframe style="margin-top: 20px;" src="https://player.vimeo.com/video/664240420?h=f367b2a000?h=f367b2a000&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+
+                     <div class="vvs-partner contact-box row changeme23 blue"">
+                        <div style="width: 100%;">
+                            <h3 style="margin-bottom: -5px;">KONTAKTA OSS</h3>
+                        </div>
+                        <div class="box1">
+                            <table>
+                                <th colspan="2"><h4>Rybergs Rör AB</h4></th>
+                                <tr>
+                                    <td>Adress</td>
+                                    <td>Industrigatan 98, 291 36 MALMÖ</td>
+                                </tr>
+                                <tr>
+                                    <td>Telefon</td>
+                                    <td>040-34 56 78</td>
+                                </tr>
+                                <tr>
+                                    <td>Felanmälan</td>
+                                    <td>
+                                        <a href="https://bruunsvvs.se/bestall-service" target="_blank">https://bruunsvvs.se/bestall-service</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Serviceområde</td>
+                                    <td>Skåne, Malmö</td>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                        <div class="box2">
+                            <iframe class="mb40" style="min-height:500px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36073.03477839393!2d12.980024734875602!3d55.592185587713026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a158ad6e4641%3A0xadc0849b7a85d37f!2sRybergs%20R%C3%B6r%20AB!5e0!3m2!1sen!2sse!4v1649246846017!5m2!1sen!2sse"></iframe>
+
+                        </div>
+                    </div>
+
+                    <div class="vvs-partner affiliate-box row">
+                        <div style="width: 100%; position: relative;">
+                            <img src="/assets/img/affiliate-logo.png" style="position: absolute; top: -50px; right: -135px;">
+                            <h3 class="mb20">NIBE AUKTORISERAT SERVICEOMBUD</h3>
+                            <p>Ett NIBE auktoriserat serviceombud ger alltid bästa service och vill alltid serva kunden på bästa sätt. Våra serviceombud har specialkompetens inom NIBE's breda produktsortiment. Till ett servicecenter kan installatörer vända sig direkt för att göra felanmälan inom NIBE's fabriksgaranti. Våra srvicecenter har hög tillgänglighet och dit kan man även vända sig för att köpa reservdelar till sin NIBE produkt. NIBE har ett starkt band till sina servicecenter som är utbildade i den seenaste NIBE-tekniken.</p>
+                            <p><i>Viktigt att tänka på innan du beställer service! <br />Om din produkt är inom garantitid, dvs inom 3 år, ska felanmälan göras till din installatör eller husleverantör. <br />Detta för att skydda dig som konsument från eventuellt betalningsansvar.</p></i>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <section class="section-padding-small text-center mt80 pb60">
                     <div class="row">
                         <div class="col-12">
                             <h2 class="text-center blue fw400">Kombinationer för luft/vatten</h2>
                         </div>
                     </div>
                     <div class="row" style="justify-content: center;">
-                        <!-- <div style="width: 100%; overflow-y: scroll;"> -->
                         <div  style="overflow-y: scroll;">
                             <div class="col-12" style="margin: auto auto;">
                                 <table class="app-guidelines border--round table--alternate-row box-shadow-small mt30">
@@ -1872,26 +2038,6 @@
                                                     </p>
                                                 </div>
                                             </th>
-                                            <!-- <th class="text-left" style="vertical-align: top; background: red;">ConUno
-                                                <div class="outdoor-module">
-                                                    <p>
-                                                        Lorem ipsum dolor.
-                                                    </p>
-                                                    <p>
-                                                        consectetur amet elit.
-                                                    </p>
-                                                </div>
-                                            </th> -->
-                                            <!-- <th class="text-left" style="vertical-align: top; background: red;">ConVec
-                                                <div class="outdoor-module">
-                                                    <p>
-                                                        Lorem ipsum dolor.
-                                                    </p>
-                                                    <p>
-                                                        consectetur amet elit.
-                                                    </p>
-                                                </div>
-                                            </th> -->
                                             <th class="text-left" style="vertical-align: top;"><nobr>F2125-12</nobr>
                                                 <div class="outdoor-module">
                                                     <p>
@@ -2073,16 +2219,6 @@
                                                     <i class="fas fa-check"></i>
                                                 </a>
                                             </td>
-                                            <!-- <td class="text-center">
-                                                <a class="app-link" href="#">
-                                                    <i class="fas fa-check"></i>
-                                                </a>
-                                            </td> -->
-                                            <!-- <td class="text-center">
-                                                <a class="app-link" href="#">
-                                                    <i class="fas fa-check"></i>
-                                                </a>
-                                            </td> -->
                                             <td class="text-center">
                                                 <a class="app-link" href="#">
                                                     <i class="fas fa-check"></i>
@@ -2168,16 +2304,6 @@
                                                     <i class="fas fa-check"></i>
                                                 </a>
                                             </td>
-                                            <!-- <td class="text-center">
-                                                <a class="app-link" href="#">
-                                                    <i class="fas fa-check"></i>
-                                                </a>
-                                            </td> -->
-                                            <!-- <td class="text-center">
-                                                <a class="app-link" href="#">
-                                                    <i class="fas fa-check"></i>
-                                                </a>
-                                            </td> -->
                                             <td class="text-center">
                                                 <a class="app-link" href="#">
                                                     <i class="fas fa-check"></i>
@@ -2262,16 +2388,6 @@
                                                     <i class="fas fa-check"></i>
                                                 </a>
                                             </td>
-                                            <!-- <td class="text-center">
-                                                <a class="app-link" href="#">
-                                                    <i class="fas fa-check"></i>
-                                                </a>
-                                            </td> -->
-                                            <!-- <td class="text-center">
-                                                <a class="app-link" href="#">
-                                                    <i class="fas fa-check"></i>
-                                                </a>
-                                            </td> -->
                                             <td class="text-center">
                                                 <a class="app-link" href="#">
                                                     <i class="fas fa-check"></i>
@@ -2364,16 +2480,6 @@
                                                     <i class="fas fa-check"></i>
                                                 </a>
                                             </td>
-                                            <!-- <td class="text-center">
-                                                <a class="app-link" href="#">
-                                                    <i class="fas fa-check"></i>
-                                                </a>
-                                            </td> -->
-                                            <!-- <td class="text-center">
-                                                <a class="app-link" href="#">
-                                                    <i class="fas fa-check"></i>
-                                                </a>
-                                            </td> -->
                                             <td class="text-center">
                                                 <a class="app-link" href="#">
                                                     <i class="fas fa-check"></i>
@@ -2475,16 +2581,6 @@
                                                     <i class="fas fa-check"></i>
                                                 </a>
                                             </td>
-                                            <!-- <td class="text-center">
-                                                <a class="app-link" href="#">
-                                                    <i class="fas fa-check"></i>
-                                                </a>
-                                            </td> -->
-                                            <!-- <td class="text-center">
-                                                <a class="app-link" href="#">
-                                                    <i class="fas fa-check"></i>
-                                                </a>
-                                            </td> -->
                                             <td class="text-center">
                                                 <a class="app-link" href="#">
                                                     <i class="fas fa-check"></i>
@@ -2570,16 +2666,6 @@
                                                     <i class="fas fa-check"></i>
                                                 </a>
                                             </td>
-                                            <!-- <td class="text-center">
-                                                <a class="app-link" href="#">
-                                                    <i class="fas fa-check"></i>
-                                                </a>
-                                            </td> -->
-                                            <!-- <td class="text-center">
-                                                <a class="app-link" href="#">
-                                                    <i class="fas fa-check"></i>
-                                                </a>
-                                            </td> -->
                                             <td class="text-center">
                                                 <a class="app-link" href="#">
                                                     <i class="fas fa-check"></i>
@@ -2693,7 +2779,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
 
             </div>
         </div>

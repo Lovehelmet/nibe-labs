@@ -5122,7 +5122,7 @@ cite {
   font-weight: var(--microtip-font-weight, normal);
   line-height: 1.3em;
   text-transform: var(--microtip-text-transform, none);
-  padding: 0.75em 1em;
+  padding: 0.75em 0.75em;
   white-space: nowrap;
   box-sizing: content-box;
 }
@@ -5320,7 +5320,7 @@ cite {
 
 [role~=tooltip][data-microtip-size=medium]::after {
   white-space: initial;
-  width: 160px;
+  width: 200px;
 }
 
 [role~=tooltip][data-microtip-size=large]::after {

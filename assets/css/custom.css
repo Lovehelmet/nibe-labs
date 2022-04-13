@@ -7412,3 +7412,8 @@ figure figcaption {
   border: none !important;
   height: 4.25em;
 }
+
+[class^=stack-]:before,
+[class*=" stack-"]:before {
+  line-height: 2.1em;
+}

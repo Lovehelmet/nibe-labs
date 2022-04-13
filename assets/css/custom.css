@@ -5895,6 +5895,11 @@ h5:not(:last-child),
     flex-direction: column;
   }
 }
+@media (min-width: 991px) {
+  .dropdown .dropdown__container:before {
+    height: 15px;
+  }
+}
 @media (max-width: 1198px) {
   .menu-horizontal span.active {
     color: #252525 !important;

@@ -3512,12 +3512,12 @@ Copyright (c) 2014 Daniel Eden
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   color: #252525;
-  font-size: 0.87em;
+  font-size: 0.86em;
 }
 
 #menu3 li {
   font-family: "Rubik", sans-serif;
-  font-size: 0.97em;
+  font-size: 0.96em;
   letter-spacing: 0.009em;
   text-transform: uppercase;
   margin-top: 2px;
@@ -3528,7 +3528,7 @@ li .dropdown .dropdown--active {
 }
 
 #menu3 .menu-vertical li {
-  font-size: 0.87em;
+  font-size: 0.86em;
   letter-spacing: 0.009em;
   text-transform: uppercase;
   margin-left: 0px !important;

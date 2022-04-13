@@ -3505,12 +3505,77 @@ Copyright (c) 2014 Daniel Eden
   text-align: center;
 }
 
+.menu-horizontal > li > a,
+.menu-horizontal > li > span,
+.menu-horizontal > li > .modal-instance > .modal-trigger {
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  color: #252525;
+  font-size: 0.87em;
+}
+
 #menu3 li {
   font-family: "Rubik", sans-serif;
-  font-size: 0.95em;
+  font-size: 0.97em;
   letter-spacing: 0.009em;
   text-transform: uppercase;
   margin-top: 2px;
+}
+
+li .dropdown .dropdown--active {
+  opacity: 1;
+}
+
+#menu3 .menu-vertical li {
+  font-size: 0.87em;
+  letter-spacing: 0.009em;
+  text-transform: uppercase;
+  margin-left: 0px !important;
+}
+
+.menu-vertical li:hover::before {
+  content: "•";
+  font-size: 1.6em;
+  position: absolute;
+  left: 0px;
+  margin: 0 0 0 15px;
+}
+.menu-vertical li.active::before {
+  content: "•";
+  font-size: 1.6em;
+  position: absolute;
+  left: 0px;
+  margin: 0 0 0 15px;
+}
+.menu-vertical li.active:hover::before {
+  content: "•";
+  font-size: 1.6em;
+  position: absolute;
+  left: 0px;
+  margin: 0 0 0 15px;
+}
+
+.dropdown__content--lg li:hover::before {
+  content: "•";
+  font-size: 1.6em;
+  position: absolute;
+  left: 0px;
+  margin: 0 0 0 1px;
+}
+.dropdown__content--lg li.active::before {
+  content: "•";
+  font-size: 1.6em;
+  position: absolute;
+  left: 0px;
+  margin: 0 0 0 1px;
+}
+.dropdown__content--lg li.active:hover::before {
+  content: "•";
+  font-size: 1.6em;
+  position: absolute;
+  left: 0px;
+  margin: 0 0 0 1px;
 }
 
 .bar .menu-horizontal {

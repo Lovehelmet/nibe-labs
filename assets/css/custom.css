@@ -3539,7 +3539,7 @@ li .dropdown .dropdown--active {
   font-size: 1.6em;
   position: absolute;
   left: 0px;
-  margin: 0 0 0 15px;
+  margin: -1px 0 0 15px;
 }
 .menu-vertical li.active::before {
   content: "•";

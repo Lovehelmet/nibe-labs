@@ -19,7 +19,7 @@
 		<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
 
     </head>
-    <body class="dropdowns--hover" data-smooth-scroll-offset="160" >
+    <body data-smooth-scroll-offset="160" >
         <a id="start"></a>
         
         <div class="main-container">
@@ -56,7 +56,7 @@
                                 <div class="col-lg-9 order-lg-2 pl60">
                                     <div class="bar__module">
                                         <ul class="menu-horizontal text-left">
-                                            <li class="dropdown"> 
+                                            <li class="dropdown nav-item"> 
                                                 <span class="dropdown__trigger">Hitta rätt värmepump</span>
                                                 <div class="dropdown__container">
                                                     <div class="container">
@@ -79,7 +79,7 @@
                                                 </div>
                                             </li>
 
-                                            <li class="dropdown"> 
+                                            <li class="dropdown nav-item"> 
                                                 <span class="dropdown__trigger">Produkter</span>
                                                 <div class="dropdown__container">
                                                     <div class="container">
@@ -186,17 +186,17 @@
                                             </li> -->
 
 
-                                            <li>
-                                                <a id="kunskapsbank" href="#">Kunskapsbank</a>
+                                            <li class="nav-item">
+                                                <a href="#">Kunskapsbank</a>
                                             </li>
-                                            <li>
-                                                <a id="support" href="#">Support</a>
+                                            <li class="nav-item">
+                                                <a href="#">Support</a>
                                             </li>
-                                            <li>
+                                            <li class="nav-item">
                                                 <a id="smarta-hem" href="#">Smarta hem</a>
                                             </li>
-                                            <li>
-                                                <a id="om-nibe" href="#">Om Nibe</a>
+                                            <li class="nav-item">
+                                                <a href="#">Om Nibe</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -3052,7 +3052,7 @@
 
         <script>
             $(function () {
-                $('.menu-horizontal li a').each(function () {
+                $('.menu-horizontal li').each(function () {
                     if ($(this).prop('href') == window.location.href) {
                             $(this).addClass('active');
                     }
@@ -3061,9 +3061,11 @@
     
             // sets class active to menu with ID om-oss on page load
             $(document).ready(function(){
-                $('#support').addClass('active');
+                $('#smarta-hem').addClass('active');
             });
         </script>
+
+        
 
         <script>
             inlineSVG.init({

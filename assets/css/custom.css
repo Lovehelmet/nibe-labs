@@ -3548,13 +3548,6 @@ li .dropdown .dropdown--active {
   left: 0px;
   margin: 0 0 0 15px;
 }
-.menu-vertical li.active:hover::before {
-  content: "•";
-  font-size: 1.6em;
-  position: absolute;
-  left: 0px;
-  margin: 0 0 0 15px;
-}
 
 .dropdown__content--lg li:hover::before {
   content: "•";

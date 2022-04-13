@@ -5907,6 +5907,14 @@ h5:not(:last-child),
     position: relative;
   }
 
+  .dropdown__container .container {
+    padding: 0;
+  }
+
+  .dropdown__container .container .dropdown__content {
+    padding-top: 0;
+  }
+
   .menu-horizontal li a.active {
     opacity: 1;
   }

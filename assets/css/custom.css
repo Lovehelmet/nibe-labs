@@ -3498,7 +3498,7 @@ Copyright (c) 2014 Daniel Eden
   height: 4px;
   width: 44px;
   background: #252525;
-  bottom: -29px;
+  bottom: -28px;
   left: 0px;
   right: 0;
   margin: 0 auto;
@@ -5933,7 +5933,7 @@ h5:not(:last-child),
 }
 @media (min-width: 991px) {
   .dropdown .dropdown__container:before {
-    height: 15px;
+    height: 18px;
   }
 }
 @media (max-width: 1198px) {

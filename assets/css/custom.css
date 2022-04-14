@@ -3489,7 +3489,7 @@ Copyright (c) 2014 Daniel Eden
   position: relative;
 }
 
-.menu-horizontal li a.active {
+.menu-horizontal li.nav-item.active a {
   opacity: 1;
 }
 .menu-horizontal li a.active::before {
@@ -3515,6 +3515,45 @@ Copyright (c) 2014 Daniel Eden
   font-size: 0.86em;
 }
 
+.menu-horizontal > li.nav-item.active a::after:focus {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 44px;
+  background: #252525;
+  bottom: -28px;
+  left: 0px;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.menu-horizontal > li.nav-item.active a::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 44px;
+  background: #252525;
+  bottom: -28px;
+  left: 0px;
+  right: 0;
+  margin: 0 auto;
+  opacity: 1;
+  text-align: center;
+  -webkit-animation: pop 0.3s;
+}
+
+@-webkit-keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 #menu3 li {
   font-family: "Rubik", sans-serif;
   font-size: 0.96em;

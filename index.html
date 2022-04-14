@@ -3008,6 +3008,13 @@
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
         <script>
+			$(".nav-item").on("click", function(e) {
+				$("li.nav-item").removeClass("active");
+				$(this).addClass("active");
+			});
+		</script>
+
+        <script>
             $(function () {
                 $('.menu-horizontal li').each(function () {
                     if ($(this).prop('href') == window.location.href) {
@@ -3017,9 +3024,9 @@
             });
     
             // sets class active to menu with ID om-oss on page load
-            $(document).ready(function(){
-                $('#smarta-hem').addClass('active');
-            });
+            // $(document).ready(function(){
+            //     $('#smarta-hem').addClass('active');
+            // });
         </script>
 
         

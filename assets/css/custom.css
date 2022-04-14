@@ -4577,34 +4577,26 @@ li .dropdown .dropdown--active {
 }
 
 .myBlackButton-container {
+  width: 100%;
+  height: 85px;
+  position: fixed;
+  top: 160px;
+  z-index: 90;
   max-width: 1860px;
-  height: 0px;
-  position: relative;
-  top: 60px;
-  z-index: 10;
+  text-align: right;
+  overflow: hidden;
+  pointer-events: none;
 }
 
-#myBlackButton.fadeInRight {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: white;
-  min-width: 200px;
-  height: 40px;
-  z-index: 10;
-  transition: all 0.5s;
+.myBlackButton-container .btn {
+  opacity: 0.92 !important;
+  pointer-events: auto;
 }
 
-#myBlackButton.fadeInLeft {
-  color: white;
-  min-width: 200px;
-  height: 40px;
-  z-index: 10;
-  transition: all 0.5s;
-}
-
-#myBlackButton a {
-  border-radius: 0;
+.myBlackButton-container a {
+  border-radius: 3px 0 0 3px !important;
+  padding-right: 1.6em !important;
+  box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.17) !important;
 }
 
 .fadeInRight {
@@ -5578,6 +5570,110 @@ cite {
     margin: 10px 0;
   }
 }
+.vvs-partner {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.vvs-partner .box1 {
+  flex: 1;
+  min-height: 200px;
+  padding: 30px 30px;
+}
+
+.vvs-partner .box2 {
+  display: flex;
+  flex: 1;
+  min-height: 200px;
+  width: 40%;
+  padding: 0px 20px;
+  justify-content: center;
+}
+
+.vvs-partner.blue .box1 h2 {
+  font-size: 2.2em !important;
+  color: #113d79;
+}
+
+.vvs-partner.blue h2::after {
+  height: 12px;
+  content: "";
+  width: 95px;
+  background: #a8d0ed;
+  margin: 8px 0 20px 0;
+  display: block;
+}
+
+.vvs-partner.blue h3 {
+  font-size: 1.75em;
+  color: #113d79;
+}
+
+.vvs-partner.blue h4 {
+  font-size: 1.6em;
+  color: #113d79;
+}
+
+.vvs-partner h5:not(:last-child),
+.h5:not(:last-child) {
+  margin-bottom: 0em;
+}
+
+.vvs-partner p {
+  line-height: 1.5;
+}
+
+.vvs-partner.contact-box {
+  border: 15px solid #dce6ef;
+  padding: 40px 40px;
+  margin: 30px 4px 50px 4px;
+  gap: 20px;
+}
+
+.vvs-partner.contact-box div.box1 table {
+  border: 1px solid #fff;
+  padding: 30px;
+}
+
+table th {
+  background: none;
+  color: #252525;
+}
+
+table th,
+table td {
+  padding: 0.1em;
+}
+
+th {
+  font-weight: 500;
+}
+
+.vvs-partner.affiliate-box {
+  padding: 50px 150px;
+  margin: 0 4px;
+  gap: 20px;
+  background: #dce6ef;
+  text-align: center;
+}
+
+@media only screen and (max-width: 990px) {
+  .vvs-partner {
+    flex-direction: column;
+  }
+
+  .vvs-partner .box2 {
+    display: flex;
+    flex: 1;
+    min-height: 200px;
+    width: 100%;
+    padding: 0px 20px;
+    justify-content: center;
+  }
+}
 .app-guidelines {
   line-height: 0.8em;
 }
@@ -5735,6 +5831,18 @@ a.app-link {
   .accordion-image-row-item img {
     min-width: cover !important;
   }
+
+  .my-nav-container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 10px !important;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 17px;
+    z-index: 10;
+    box-shadow: 0px 7px 6px 0px rgba(109, 109, 109, 0.03) !important;
+    position: relative;
+  }
 }
 footer ul:not(.list-inline):not(.slides) > li {
   line-height: 1.5em !important;
@@ -5840,7 +5948,42 @@ h5:not(:last-child),
   }
 
   .bar.bar--sm {
-    padding: 0.7em 0 2.3em 0 !important;
+    padding: 0.8em 0 2em 0 !important;
+  }
+
+  .breadcrumb-bar {
+    padding: 0px 0px 7px 89px;
+    font-weight: 300;
+    font-size: 0.83em !important;
+  }
+  .breadcrumb-bar ul {
+    display: flex;
+  }
+
+  .myBlackButton-container {
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    top: 105px;
+    z-index: 90;
+    max-width: 1860px;
+    text-align: right;
+    overflow: hidden;
+  }
+
+  .my-nav-container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 17px;
+    z-index: 10;
+    box-shadow: 0px 7px 6px 0px rgba(109, 109, 109, 0.03) !important;
+    position: relative;
+  }
+  .my-nav-container #sok {
+    margin-left: 18px;
   }
 
   #hero {
@@ -5886,18 +6029,6 @@ h5:not(:last-child),
 
   .features-list {
     flex-direction: column;
-  }
-
-  .my-nav-container {
-    width: 100%;
-    padding-right: 100px;
-    padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 17px;
-    z-index: 10;
-    box-shadow: 0px 7px 6px 0px rgba(109, 109, 109, 0.03) !important;
-    position: relative;
   }
 
   .dropdown__container .container {
@@ -6105,6 +6236,10 @@ h5:not(:last-child),
     line-height: 1.15em;
     font-weight: 600 !important;
     letter-spacing: 0.005em;
+  }
+  .product-box [class^=stack-]:before,
+.product-box [class*=" stack-"]:before {
+    line-height: 0em !important;
   }
 
   .product-info {
@@ -7408,5 +7543,6 @@ figure figcaption {
 
 [class^=stack-]:before,
 [class*=" stack-"]:before {
-  line-height: 2.1em;
+  line-height: 2em;
+  margin-left: 0.2em;
 }

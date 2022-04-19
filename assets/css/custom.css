@@ -4886,7 +4886,7 @@ div.mywizard-finish p {
 
 .wizard > .content {
   display: block;
-  min-height: 35em;
+  min-height: 36em;
   overflow: visible;
   position: relative;
   width: auto;
@@ -6691,6 +6691,16 @@ body {
 .m-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.input-checkbox.input-checkbox--switch label:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-color: #d3d3d3;
+  opacity: 1;
+  left: 2px;
+  top: 0.2em;
 }
 
 section {

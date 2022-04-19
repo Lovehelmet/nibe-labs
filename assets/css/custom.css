@@ -3515,7 +3515,7 @@ Copyright (c) 2014 Daniel Eden
   font-size: 0.86em;
 }
 
-.menu-horizontal > li.nav-item.active a::after:focus {
+.menu-horizontal > .nav-item.active a::after:focus {
   content: "";
   position: absolute;
   height: 4px;
@@ -3528,7 +3528,7 @@ Copyright (c) 2014 Daniel Eden
   opacity: 0;
 }
 
-.menu-horizontal > li.nav-item.active a::after {
+.menu-horizontal > .nav-item.active a::after {
   content: "";
   position: absolute;
   height: 4px;
@@ -3587,27 +3587,19 @@ li .dropdown .dropdown--active {
   left: 0px;
   margin: 0 0 0 15px;
 }
-
-.dropdown__content--lg li:hover::before {
+.menu-vertical li.dropdown-active:hover::before {
   content: "•";
   font-size: 1.6em;
   position: absolute;
   left: 0px;
-  margin: 0 0 0 1px;
+  margin: -1px 0 0 15px;
 }
-.dropdown__content--lg li.active::before {
+.menu-vertical li.dropdown-active::before {
   content: "•";
   font-size: 1.6em;
   position: absolute;
   left: 0px;
-  margin: 0 0 0 1px;
-}
-.dropdown__content--lg li.active:hover::before {
-  content: "•";
-  font-size: 1.6em;
-  position: absolute;
-  left: 0px;
-  margin: 0 0 0 1px;
+  margin: -1px 0 0 15px;
 }
 
 .bar .menu-horizontal {
@@ -6156,13 +6148,6 @@ h5:not(:last-child),
   }
 }
 @media (min-width: 1199px) {
-  .menu-horizontal span.active {
-    color: #252525 !important;
-    opacity: 1 !important;
-    padding-bottom: 30px;
-    border-bottom: 2px solid #252525;
-  }
-
   .dropdown .dropdown__content:not([class=bg--dark]) .menu-vertical a.active {
     color: #252525;
     font-weight: 500 !important;

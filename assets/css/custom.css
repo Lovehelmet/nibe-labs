@@ -4668,68 +4668,6 @@ li .dropdown .dropdown--active {
     transform: none;
   }
 }
-.fadeOutRight {
-  -webkit-animation-name: fadeOutRight;
-  animation-name: fadeOutRight;
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeOutRight {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-@keyframes fadeOutRight {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
 footer {
   background-color: #113d79 !important;
   color: #fff !important;
@@ -6313,6 +6251,10 @@ h5:not(:last-child),
   }
 }
 @media (max-width: 768px) {
+  .main-content-box {
+    padding-top: 2px !important;
+  }
+
   .product-box {
     display: flex;
     flex-direction: column;
@@ -6331,7 +6273,7 @@ h5:not(:last-child),
   }
   .product-box [class^=stack-]:before,
 .product-box [class*=" stack-"]:before {
-    line-height: 1em !important;
+    line-height: 2em !important;
   }
 
   .product-info {
@@ -6695,7 +6637,7 @@ section.height-auto {
 body {
   font-family: "Rubik", sans-serif;
   font-size: 16px !important;
-  margin: 107px auto 0 auto;
+  margin: 0px auto 0 auto;
   max-width: 1860px;
   background: #fafafa;
 }
@@ -6712,6 +6654,10 @@ body {
   background: #fff;
   overflow: hidden;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08);
+}
+
+.main-content-box {
+  padding-top: 107px;
 }
 
 .search-box {
@@ -7636,4 +7582,8 @@ figure figcaption {
 .icon-tooltip {
   border: none !important;
   height: 4.25em;
+}
+
+i.stack-interface.stack-up-open-big {
+  line-height: 2em !important;
 }

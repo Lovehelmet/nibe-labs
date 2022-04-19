@@ -4932,7 +4932,7 @@ cite {
 
 .wizard > .content {
   display: block;
-  min-height: 30em;
+  min-height: 35em;
   overflow: visible;
   position: relative;
   width: auto;

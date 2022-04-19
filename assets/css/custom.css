@@ -7537,6 +7537,11 @@ textarea:focus {
   border-color: #9f9f9f;
 }
 
+label {
+  font-size: 1em;
+  margin-bottom: 0 !important;
+}
+
 .my-product {
   display: block;
   background-color: #dce6ef;

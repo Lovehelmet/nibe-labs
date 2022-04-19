@@ -5681,6 +5681,7 @@ div.mywizard-finish p {
 
 .vvs-partner p {
   line-height: 1.5;
+  margin-bottom: 1.2em;
 }
 
 .vvs-partner.contact-box {
@@ -7625,4 +7626,9 @@ figure figcaption {
 .icon-tooltip {
   border: none !important;
   height: 4.25em;
+}
+
+[class^=stack-]:before,
+[class*=" stack-"]:before {
+  line-height: 2em;
 }

@@ -117,6 +117,10 @@ img {
   padding-bottom: 100px !important;
 }
 
+.pl10 {
+  padding-left: 0px !important;
+}
+
 .pl40 {
   padding-left: 40px !important;
 }
@@ -3429,8 +3433,8 @@ Copyright (c) 2014 Daniel Eden
 
 .my-nav-container {
   width: 100%;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 90px;
+  padding-left: 90px;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 17px;
@@ -5918,10 +5922,12 @@ a.app-link {
     display: none !important;
   }
 
-  [class^=stack-]:before,
-[class*=" stack-"]:before {
-    line-height: 1em;
-    margin-left: 0.2em;
+  .bar .logo {
+    max-height: 3.15em !important;
+    max-width: none;
+    margin: 0;
+    position: relative;
+    top: 1px !important;
   }
 
   .wizard > .content {
@@ -5981,6 +5987,14 @@ h5:not(:last-child),
     margin: 0.3em 1em 0.5em 0em !important;
     float: left;
   }
+
+  .bar .logo {
+    max-height: 3.15em !important;
+    max-width: none;
+    margin: 0;
+    position: relative;
+    top: -2px !important;
+  }
 }
 @media only screen and (max-width: 990px) {
   .column-txt {
@@ -6009,14 +6023,6 @@ h5:not(:last-child),
 
   body {
     margin-top: 0px !important;
-  }
-
-  .bar .logo {
-    max-height: 3.15em !important;
-    max-width: none;
-    margin: 0;
-    position: relative;
-    top: 1px !important;
   }
 
   .bar .menu-horizontal {
@@ -6049,6 +6055,10 @@ h5:not(:last-child),
   }
   .breadcrumb-bar ul {
     display: flex;
+  }
+
+  .bar.bar--sm.visible-sm.visible-xs div.container {
+    max-width: 920px;
   }
 
   .myBlackButton-container {
@@ -6321,7 +6331,7 @@ h5:not(:last-child),
   }
   .product-box [class^=stack-]:before,
 .product-box [class*=" stack-"]:before {
-    line-height: 0em !important;
+    line-height: 1em !important;
   }
 
   .product-info {
@@ -7626,9 +7636,4 @@ figure figcaption {
 .icon-tooltip {
   border: none !important;
   height: 4.25em;
-}
-
-[class^=stack-]:before,
-[class*=" stack-"]:before {
-  line-height: 2em;
 }

@@ -4634,6 +4634,11 @@ li .dropdown .dropdown--active {
   box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.17) !important;
 }
 
+.myBlackButton-container .btn:hover {
+  border-radius: 3px 0 0 3px !important;
+  padding-right: 2.2em !important;
+}
+
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
@@ -7485,6 +7490,68 @@ h5:not(:last-child),
 
 .columns.blue a {
   color: #113d79;
+}
+
+.columns.blue a {
+  text-decoration: none !important;
+  color: #113d79 !important;
+  position: relative;
+  font-weight: 400;
+}
+
+.columns.blue a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #2c60a1 !important;
+  -webkit-transform: scaleX(0.3);
+  transform: scaleX(0.3);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.columns.blue a:hover::after {
+  text-decoration: none !important;
+  height: 1px;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.columns.green a {
+  text-decoration: none !important;
+  color: #318244;
+  position: relative;
+  font-weight: 400;
+}
+
+.columns.green a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #73b16c;
+  -webkit-transform: scaleX(0.3);
+  transform: scaleX(0.3);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.columns.green a:hover::after {
+  text-decoration: none !important;
+  height: 1px;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .columns.white {
